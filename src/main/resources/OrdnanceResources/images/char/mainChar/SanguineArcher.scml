@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0" name="FullImages">
+        <file id="0" name="FullImages/Bqp_00_00.png" width="256" height="256" pivot_x="0.5" pivot_y="0"/>
+        <file id="1" name="FullImages/Bqp_00_01.png" width="256" height="256" pivot_x="0.5" pivot_y="0"/>
+        <file id="2" name="FullImages/Bqp_00_02.png" width="256" height="256" pivot_x="0.5" pivot_y="0"/>
+        <file id="3" name="FullImages/Bqp_00_03.png" width="256" height="256" pivot_x="0.5" pivot_y="0"/>
+        <file id="4" name="FullImages/Bqp_00_04.png" width="256" height="256" pivot_x="0.5" pivot_y="0"/>
+        <file id="5" name="FullImages/Bqp_00_05.png" width="256" height="256" pivot_x="0.5" pivot_y="0"/>
+    </folder>
+    <entity id="0" name="Ordnance">
+        <animation id="0" name="idle" length="4000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="2000">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Bqp_00_00">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" angle="0" scale_x="-1"/>
+                </key>
+                <key id="1" time="2000" spin="0">
+                    <object folder="0" file="0" angle="0" scale_x="-0.97" scale_y="1.03"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="attack" length="500" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="250">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Bqp_00_01">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" angle="0" scale_x="-1"/>
+                </key>
+                <key id="1" time="250" spin="0">
+                    <object folder="0" file="1" angle="0" scale_x="-0.97" scale_y="1.03"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="2" name="skill" length="500" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="250">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Bqp_00_05">
+                <key id="0" spin="0">
+                    <object folder="0" file="5" angle="0" scale_x="-1"/>
+                </key>
+                <key id="1" time="250" spin="0">
+                    <object folder="0" file="5" angle="0" scale_x="-0.97" scale_y="1.03"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="3" name="happy" length="500" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="250">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Bqp_00_03">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" angle="0" scale_x="-1"/>
+                </key>
+                <key id="1" time="250" spin="0">
+                    <object folder="0" file="3" angle="0" scale_x="-0.97" scale_y="1.03"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="4" name="hurt" length="500" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="250">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Bqp_00_02">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" angle="0" scale_x="-1"/>
+                </key>
+                <key id="1" time="250" spin="0">
+                    <object folder="0" file="2" angle="0" scale_x="-0.97" scale_y="1.03"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="5" name="ko" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="500">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Bqp_00_04">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" angle="0" scale_x="-1"/>
+                </key>
+                <key id="1" time="500" spin="0">
+                    <object folder="0" file="4" angle="0" scale_x="-0.97" scale_y="1.03"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

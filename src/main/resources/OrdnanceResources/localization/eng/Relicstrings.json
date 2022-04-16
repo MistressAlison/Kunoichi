@@ -1,0 +1,9 @@
+{
+  "${ModID}:TodoItem": {
+    "NAME": "Todo Item",
+    "FLAVOR": "TODO: make this a sweet relic.",
+    "DESCRIPTIONS": [
+      "Cards that deal [Ordnance:RangedIcon] damage now deal #b3 additional damage."
+    ]
+  }
+}

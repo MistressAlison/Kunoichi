@@ -1,0 +1,32 @@
+{
+  "${ModID}:AmmoPower": {
+    "NAME": "Ammo",
+    "DESCRIPTIONS": ["Used to perform #yRanged attacks."]
+  },
+  "${ModID}:BleedPower": {
+    "NAME": "Bleeding",
+    "DESCRIPTIONS": ["At the start of its turn, loses #b"," HP.",
+                    "At the start of your turn, lose #b"]
+  },
+  "${ModID}:BloodlustPower": {
+    "NAME": "Bloodlust",
+    "DESCRIPTIONS": ["Succumb to bloodlust when it exceeds your HP, granting double damage and the inability to #yBlock."]
+  },
+  "${ModID}:EmbeddedAmmoPower": {
+    "NAME": "Embedded Ammo",
+    "DESCRIPTIONS": ["When this creature dies, gain #b"," #yAmmo."]
+  },
+  "${ModID}:FireAmmoPower": {
+    "NAME": "Fire Infusion",
+    "DESCRIPTIONS": ["Your next #yRanged attack deals [Ordnance:FireIcon] damage.",
+                    "Your next #b"," #yRanged attacks deal [Ordnance:FireIcon] damage."]
+  },
+  "${ModID}:LosePowerPower": {
+    "NAME": "Lose ",
+    "DESCRIPTIONS": ["At the end of your turn, lose #b"," ","."]
+  },
+  "${ModID}:NextTurnPowerPower": {
+    "NAME": "Next Turn ",
+    "DESCRIPTIONS": ["Next turn, gain #b"," ","."]
+  }
+}
