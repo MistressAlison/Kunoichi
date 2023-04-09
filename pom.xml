@@ -3,10 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>Info</groupId>
 
-    <artifactId>Ordnance</artifactId>
+    <artifactId>Kunoichi</artifactId>
     <version>0.0.1</version>
-    <name>The Munitions</name>
-    <description>Adds Iru to Slay the Spire</description>
+    <name>The Kunoichi</name>
+    <description>Adds a ninja to Slay the Spire</description>
     <!-- Change the above for mod information. -->
 
     <properties>
@@ -15,10 +15,10 @@
         <SlayTheSpire.version>12-22-2020</SlayTheSpire.version>
         <ModTheSpire.version>3.20.0</ModTheSpire.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <ModID>Ordnance</ModID>
+        <ModID>Kunoichi</ModID>
 
         <!--CHANGE THIS TO YOUR STEAM INSTALLATION-->
-        <Steam.path>D:\Steam\steamapps</Steam.path>
+        <Steam.path>E:\SteamLibrary\steamapps</Steam.path>
 
     </properties>
 
@@ -66,28 +66,13 @@
             <!--<systemPath>${basedir}/../lib/StSLib.jar</systemPath>-->
         </dependency>
         <dependency>
-            <groupId>friendlyminions</groupId>
-            <artifactId>FriendlyMinions</artifactId>
-            <version>1.1.2</version>
+            <groupId>autumn</groupId>
+            <artifactId>ChimeraCards</artifactId>
+            <version>0.5.2</version>
             <scope>system</scope>
-            <systemPath>${Steam.path}/workshop/content/646570/1612426481/FriendlyMinions.jar</systemPath>
-            <!--<systemPath>${basedir}/../lib/StSLib.jar</systemPath>-->
+            <!--<systemPath>${Steam.path}/workshop/content/646570/1609158507/StSLib.jar</systemPath>-->
+            <systemPath>${Steam.path}/common/SlayTheSpire/mods/CardAugments.jar</systemPath>
         </dependency>
-        <dependency>
-            <groupId>ArtlessCards</groupId>
-            <artifactId>ArtlessCArds</artifactId>
-            <version>0.0.1</version>
-            <scope>system</scope>
-            <systemPath>${Steam.path}/common/SlayTheSpire/mods/ArtlessCards.jar</systemPath>
-            <!--<systemPath>${basedir}/../lib/StSLib.jar</systemPath>-->
-        </dependency>
-        <!--<dependency>
-            <groupId>iconaddons</groupId>
-            <artifactId>IconAddons</artifactId>
-            <version>0.0.3</version>
-            <scope>system</scope>
-            <systemPath>${Steam.path}/common/SlayTheSpire/mods/IconsAddon.jar</systemPath>
-        </dependency>-->
     </dependencies>
 
 

@@ -1,0 +1,16 @@
+{
+  "${ModID}:Scroll": {
+    "NAME": "Ninja Scroll",
+    "FLAVOR": "This scroll details a mission which you do not recognize.",
+    "DESCRIPTIONS": [
+      "Start each combat with an additional [E] ."
+    ]
+  },
+  "${ModID}:Boots": {
+    "NAME": "Stomping Boots",
+    "FLAVOR": "First I put on my left stomping boot. It's quite stompy, and a particular favorite of mine.",
+    "DESCRIPTIONS": [
+      "Whenever you deal unblocked attack damage, the target loses #b2 HP."
+    ]
+  }
+}

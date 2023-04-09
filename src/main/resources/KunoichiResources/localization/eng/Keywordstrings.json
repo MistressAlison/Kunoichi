@@ -1,0 +1,11 @@
+[
+  {
+    "ID": "bleeding",
+    "PROPER_NAME": "Bleeding",
+    "NAMES": [
+      "bleeding",
+      "bleed"
+    ],
+    "DESCRIPTION": "Bleeding creatures lose HP at the start of their turn."
+  }
+]

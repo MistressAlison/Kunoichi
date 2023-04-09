@@ -1,0 +1,13 @@
+{
+  "${ModID}:TheKunoichi": {
+    "NAMES": [
+      "The Kunoichi",
+      "the Kunoichi"
+    ],
+    "TEXT": [
+      "A covert agent adept at guerrilla warfare. NL Wielder of many weapons.",
+      "You slash the heart.",
+      "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~clandestine~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
+    ]
+  }
+}
