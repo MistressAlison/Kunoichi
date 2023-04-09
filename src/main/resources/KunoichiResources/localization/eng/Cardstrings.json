@@ -18,6 +18,11 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "${ModID}:ExtremeSpeed": {
+    "NAME": "Extreme Speed",
+    "DESCRIPTION": "Draw X cards. NL They cost 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Draw X+1 cards. NL They cost 0 this turn. NL Exhaust."
+  },
   "${ModID}:PowerupPunch": {
     "NAME": "Powerup Punch",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! Strength. NL At the end of this turn, lose !M! Strength."
