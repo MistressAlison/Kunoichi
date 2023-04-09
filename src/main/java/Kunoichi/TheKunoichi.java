@@ -1,7 +1,6 @@
 package Kunoichi;
 
-import Kunoichi.cards.Prepare;
-import Kunoichi.cards.RisingEdge;
+import Kunoichi.cards.*;
 import Kunoichi.cards.interfaces.SkillAnimationAttack;
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
@@ -23,8 +22,6 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
-import Kunoichi.cards.Defend;
-import Kunoichi.cards.Strike;
 import Kunoichi.relics.Scroll;
 
 import java.util.ArrayList;
@@ -85,7 +82,7 @@ public class TheKunoichi extends CustomPlayer {
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
-        //retVal.add(RisingEdge.ID);
+        retVal.add(PouchBlades.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
