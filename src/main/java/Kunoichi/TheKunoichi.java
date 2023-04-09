@@ -1,5 +1,6 @@
 package Kunoichi;
 
+import Kunoichi.cards.RisingEdge;
 import Kunoichi.cards.interfaces.SkillAnimationAttack;
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
@@ -58,7 +59,7 @@ public class TheKunoichi extends CustomPlayer {
                 SHOULDER1,
                 SHOULDER2,
                 CORPSE,
-                getLoadout(), 20.0F, -10.0F, 166.0F, 327.0F, new EnergyManager(3));
+                getLoadout(), 10.0F, -10.0F, 220.0F, 240.0F, new EnergyManager(3)); // 20.0F, -10.0F, 166.0F, 327.0F
 
 
         dialogX = (drawX + 0.0F * Settings.scale);
@@ -83,6 +84,7 @@ public class TheKunoichi extends CustomPlayer {
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
+        retVal.add(RisingEdge.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
