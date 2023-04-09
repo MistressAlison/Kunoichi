@@ -11,12 +11,16 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import static Kunoichi.KunoichiMod.makeID;
 
 public class BleedPower extends AbstractEasyPower {
-    public static String TEXT_ID = makeID(BleedPower.class.getSimpleName());
-    public static PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(TEXT_ID);
+    public static String POWER_ID = makeID(BleedPower.class.getSimpleName());
+    public static PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+    public static final String NAME = strings.NAME;
+    public static final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
+
     public AbstractCreature source;
 
     public BleedPower(AbstractCreature owner, AbstractCreature source, int amount) {
-        super(strings.NAME, PowerType.DEBUFF, true, owner, amount);
+        super(NAME, PowerType.DEBUFF, true, owner, amount);
+        this.ID = POWER_ID;
         this.source = source;
         this.loadRegion("brutality");
     }
@@ -30,9 +34,9 @@ public class BleedPower extends AbstractEasyPower {
 
     public void updateDescription() {
         if (this.owner != null && !this.owner.isPlayer) {
-            this.description = DESCRIPTIONS[2] + this.amount + DESCRIPTIONS[1];
-        } else {
             this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        } else {
+            this.description = DESCRIPTIONS[2] + this.amount + DESCRIPTIONS[1];
         }
     }
 }
