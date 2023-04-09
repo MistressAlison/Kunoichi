@@ -29,7 +29,7 @@ public class Snipe extends AbstractEasyCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         dmg(m, AbstractGameAction.AttackEffect.SLASH_VERTICAL);
-        addToBot(new SelectCardsInHandAction(1, cardStrings.EXTENDED_DESCRIPTION[0], l -> {
+        addToBot(new SelectCardsInHandAction(1, cardStrings.EXTENDED_DESCRIPTION[1], l -> {
             for (AbstractCard c : l) {
                 int bonus = c.costForTurn == -1 ? EnergyPanel.totalCount : Math.max(c.costForTurn, 0);
                 Wiz.att(new ApplyPowerAction(m, p, new BleedPower(m, p, magicNumber + bonus)));
