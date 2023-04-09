@@ -29,5 +29,9 @@
   "${ModID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
+  },
+  "${ModID}:UnseenStrike": {
+    "NAME": "Unseen Strike",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy does not intend to attack, deal !D! damage again."
   }
 }
