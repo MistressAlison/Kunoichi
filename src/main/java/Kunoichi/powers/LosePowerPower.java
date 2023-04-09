@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import static Kunoichi.KunoichiMod.makeID;
 
 public class LosePowerPower extends AbstractEasyPower {
-    public static String TEXT_ID = makeID("LosePowerPower");
+    public static String TEXT_ID = makeID(LosePowerPower.class.getSimpleName());
     public static PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(TEXT_ID);
     private AbstractPower powerToLose;
     //private static Texture chain = TexLoader.getTexture("OrdnanceResources/images/ui/chain.png");

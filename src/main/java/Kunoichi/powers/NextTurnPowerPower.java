@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import static Kunoichi.KunoichiMod.makeID;
 
 public class NextTurnPowerPower extends AbstractEasyPower {
-    public static String TEXT_ID = makeID("NextTurnPowerPower");
+    public static String TEXT_ID = makeID(NextTurnPowerPower.class.getSimpleName());
     public static PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(TEXT_ID);
     private AbstractPower powerToGain;
         /*

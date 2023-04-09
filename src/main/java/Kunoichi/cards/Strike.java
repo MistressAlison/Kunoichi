@@ -8,8 +8,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import static Kunoichi.KunoichiMod.makeID;
 
 public class Strike extends AbstractEasyCard {
-    public final static String ID = makeID("Strike");
-    // intellij stuff attack, enemy, basic, 6, 3,  , , , 
+    public final static String ID = makeID(Strike.class.getSimpleName());
 
     public Strike() {
         super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY);
