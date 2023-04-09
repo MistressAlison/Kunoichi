@@ -24,7 +24,7 @@ public class PowerupPunch extends AbstractEasyCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         dmg(m, AbstractGameAction.AttackEffect.BLUNT_LIGHT);
-        addToBot(new ApplyPowerActionWithFollowup(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber)), new ApplyPowerAction(p, p, new LoseStrengthPower(p, -magicNumber))));
+        addToBot(new ApplyPowerActionWithFollowup(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber)), new ApplyPowerAction(p, p, new LoseStrengthPower(p, magicNumber))));
     }
 
     public void upp() {
