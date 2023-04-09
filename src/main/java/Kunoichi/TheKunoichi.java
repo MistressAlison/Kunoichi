@@ -85,7 +85,7 @@ public class TheKunoichi extends CustomPlayer {
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
-        retVal.add(RisingEdge.ID);
+        //retVal.add(RisingEdge.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);

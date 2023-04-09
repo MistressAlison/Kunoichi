@@ -19,7 +19,7 @@
   },
   "${ModID}:RisingEdge": {
     "NAME": "Rising Edge",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{!M!|>1=s}. NL kunoichi:Opener: Draw !M! card{!M!|>1=s}.{@@}"
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{!M!|>1=s}. NL kunoichi:Opener: {!M!|1=It costs 0 this turn|@=They cost 0 this turn}.{@@}"
   },
   "${ModID}:Snipe": {
     "NAME": "Snipe",

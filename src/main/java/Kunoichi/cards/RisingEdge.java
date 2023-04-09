@@ -17,15 +17,19 @@ public class RisingEdge extends AbstractEasyCard {
     public final static String ID = makeID(RisingEdge.class.getSimpleName());
 
     public RisingEdge() {
-        super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY);
-        baseDamage = damage = 6;
+        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        baseDamage = damage = 8;
         baseMagicNumber = magicNumber = 1;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         dmg(m, AbstractGameAction.AttackEffect.SLASH_VERTICAL);
-        addToBot(new DrawCardAction(magicNumber));
-        addToBot(new DoIfAction(() -> AbstractDungeon.actionManager.cardsPlayedThisTurn.size() == 1, () -> addToTop(new DrawCardAction(magicNumber))));
+        addToBot(new DrawCardAction(magicNumber, new DoIfAction(() -> AbstractDungeon.actionManager.cardsPlayedThisTurn.size() == 1, () -> {
+            for (AbstractCard c : DrawCardAction.drawnCards) {
+                c.setCostForTurn(0);
+            }
+        })));
+        //addToBot(new DoIfAction(() -> AbstractDungeon.actionManager.cardsPlayedThisTurn.size() == 1, () -> addToTop(new DrawCardAction(magicNumber))));
     }
 
     public void upp() {
