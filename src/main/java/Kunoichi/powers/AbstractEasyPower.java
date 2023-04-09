@@ -11,7 +11,6 @@ import static Kunoichi.KunoichiMod.makeID;
 
 public abstract class AbstractEasyPower extends AbstractPower {
     public AbstractEasyPower(String NAME, PowerType powerType, boolean isTurnBased, AbstractCreature owner, int amount) {
-        this.ID = makeID(NAME.replaceAll(" ", ""));
         this.isTurnBased = isTurnBased;
 
         this.name = NAME;
