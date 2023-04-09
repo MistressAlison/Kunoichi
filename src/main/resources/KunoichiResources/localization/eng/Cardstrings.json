@@ -5,6 +5,11 @@
     "UPGRADE_DESCRIPTION": "Upgrade description",
     "EXTENDED_DESCRIPTION": ["Extra Stuff"]
   },
+  "${ModID}:Decoy": {
+    "NAME": "Decoy",
+    "DESCRIPTION": "Exhaust. NL Startup: Gain !M! Intangible.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Startup: Gain !M! Intangible."
+  },
   "${ModID}:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
