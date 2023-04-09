@@ -5,6 +5,10 @@
     "UPGRADE_DESCRIPTION": "Upgrade description",
     "EXTENDED_DESCRIPTION": ["Extra Stuff"]
   },
+  "${ModID}:DiveForCover": {
+    "NAME": "Dive for Cover",
+    "DESCRIPTION": "Gain !B! Block. NL Remove !M! of your debuff{!M!|>1=s}.{@@}"
+  },
   "${ModID}:Decoy": {
     "NAME": "Decoy",
     "DESCRIPTION": "Exhaust. NL Startup: Gain !M! Intangible.",
