@@ -13,6 +13,10 @@
     "NAME": "Powerup Punch",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! Strength. NL At the end of this turn, lose !M! Strength."
   },
+  "${ModID}:Prepare": {
+    "NAME": "Prepare",
+    "DESCRIPTION": "Gain !B! Block. NL kunoichi:Counter: Deal !M! damage back."
+  },
   "${ModID}:RisingEdge": {
     "NAME": "Rising Edge",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{!M!|>1=s}. NL kunoichi:Opener: Draw !M! card{!M!|>1=s}.{@@}"

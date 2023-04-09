@@ -1,5 +1,6 @@
 package Kunoichi;
 
+import Kunoichi.cards.Prepare;
 import Kunoichi.cards.RisingEdge;
 import Kunoichi.cards.interfaces.SkillAnimationAttack;
 import basemod.abstracts.CustomPlayer;
@@ -89,6 +90,7 @@ public class TheKunoichi extends CustomPlayer {
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
+        retVal.add(Prepare.ID);
         return retVal;
     }
 
