@@ -11,7 +11,7 @@ import static Kunoichi.KunoichiMod.makeID;
 
 public abstract class AbstractEasyPower extends AbstractPower {
     public AbstractEasyPower(String NAME, PowerType powerType, boolean isTurnBased, AbstractCreature owner, int amount) {
-        this.ID = makeID(NAME.replaceAll("([ ])", ""));
+        this.ID = makeID(NAME.replaceAll(" ", ""));
         this.isTurnBased = isTurnBased;
 
         this.name = NAME;
@@ -20,8 +20,8 @@ public abstract class AbstractEasyPower extends AbstractPower {
         this.amount = amount;
         this.type = powerType;
 
-        Texture normalTexture = TexLoader.getTexture(KunoichiMod.modID + "Resources/images/powers/" + NAME.replaceAll("([ ])", "") + "32.png");
-        Texture hiDefImage = TexLoader.getTexture(KunoichiMod.modID + "Resources/images/powers/" + NAME.replaceAll("([ ])", "") + "84.png");
+        Texture normalTexture = TexLoader.getTexture(KunoichiMod.modID + "Resources/images/powers/" + NAME.replaceAll(" ", "") + "32.png");
+        Texture hiDefImage = TexLoader.getTexture(KunoichiMod.modID + "Resources/images/powers/" + NAME.replaceAll(" ", "") + "84.png");
         if (hiDefImage != null) {
             region128 = new TextureAtlas.AtlasRegion(hiDefImage, 0, 0, hiDefImage.getWidth(), hiDefImage.getHeight());
             if (normalTexture != null)
