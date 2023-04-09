@@ -7,5 +7,21 @@
       "bleed"
     ],
     "DESCRIPTION": "Bleeding creatures lose HP at the start of their turn."
+  },
+  {
+    "ID": "opener",
+    "PROPER_NAME": "Opener",
+    "NAMES": [
+      "opener"
+    ],
+    "DESCRIPTION": "Effect triggers if this is the first card played this turn."
+  },
+  {
+    "ID": "counter",
+    "PROPER_NAME": "Counter",
+    "NAMES": [
+      "counter"
+    ],
+    "DESCRIPTION": "Effect triggers the next time you are attacked."
   }
 ]

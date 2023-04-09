@@ -6,6 +6,8 @@ import java.util.HashMap;
 public class KeywordManager {
     public static HashMap<String, String> keywordMap = new HashMap<>();
     public static String BLEEDING;
+    public static String OPENER;
+    public static String COUNTER;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");
@@ -17,7 +19,7 @@ public class KeywordManager {
         for (Field f : fields) {
             if (f.getName().toLowerCase().equals(ID)) {
                 try {
-                    f.set(null, ID);
+                    f.set(null, key);
                 } catch (IllegalAccessException e) {
                     throw new RuntimeException(e);
                 }
