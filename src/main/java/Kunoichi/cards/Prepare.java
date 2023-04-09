@@ -19,11 +19,13 @@ public class Prepare extends AbstractEasyCard {
         baseMagicNumber = magicNumber = 8;
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
         Wiz.applyToSelf(new CounterDamagePower(p, magicNumber));
     }
 
+    @Override
     public void upp() {
         upgradeBlock(3);
         upgradeMagicNumber(3);

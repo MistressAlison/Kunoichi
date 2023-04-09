@@ -22,6 +22,7 @@ public class RisingEdge extends AbstractEasyCard {
         baseMagicNumber = magicNumber = 1;
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         dmg(m, AbstractGameAction.AttackEffect.SLASH_VERTICAL);
         addToBot(new DrawCardAction(magicNumber, new DoIfAction(() -> AbstractDungeon.actionManager.cardsPlayedThisTurn.size() == 1, () -> {
@@ -32,10 +33,12 @@ public class RisingEdge extends AbstractEasyCard {
         //addToBot(new DoIfAction(() -> AbstractDungeon.actionManager.cardsPlayedThisTurn.size() == 1, () -> addToTop(new DrawCardAction(magicNumber))));
     }
 
+    @Override
     public void upp() {
         upgradeDamage(3);
     }
 
+    @Override
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         if (AbstractDungeon.actionManager.cardsPlayedThisTurn.isEmpty()) {

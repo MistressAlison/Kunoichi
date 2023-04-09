@@ -27,6 +27,7 @@ public class Snipe extends AbstractEasyCard {
         baseMagicNumber = magicNumber = 3;
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         dmg(m, AbstractGameAction.AttackEffect.SLASH_VERTICAL);
         addToBot(new SelectCardsInHandAction(1, cardStrings.EXTENDED_DESCRIPTION[1], l -> {
@@ -39,6 +40,7 @@ public class Snipe extends AbstractEasyCard {
         }));
     }
 
+    @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         boolean canUse = super.canUse(p, m);
         if (canUse) {
@@ -52,6 +54,7 @@ public class Snipe extends AbstractEasyCard {
         return false;
     }
 
+    @Override
     public void upp() {
         upgradeDamage(3);
         upgradeMagicNumber(2);

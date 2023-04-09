@@ -22,8 +22,10 @@ public class Decoy extends AbstractEasyCard implements StartupCard {
         exhaust = true;
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {}
 
+    @Override
     public void upp() {
         isEthereal = true;
         exhaust = false;

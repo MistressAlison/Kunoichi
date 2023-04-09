@@ -22,11 +22,13 @@ public class UnseenStrike extends AbstractEasyCard {
         tags.add(CardTags.STRIKE);
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         dmg(m, AbstractGameAction.AttackEffect.SLASH_VERTICAL);
         addToBot(new DoIfAction(() -> isNotAttacking(m), () -> dmgTop(m, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL)));
     }
 
+    @Override
     public void upp() {
         upgradeDamage(3);
     }
@@ -35,6 +37,7 @@ public class UnseenStrike extends AbstractEasyCard {
         return m == null || m.getIntentBaseDmg() < 0;
     }
 
+    @Override
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {

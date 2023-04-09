@@ -24,6 +24,7 @@ public class ExtremeSpeed extends AbstractEasyCard {
         exhaust = true;
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new EasyXCostAction(this, (base, params) -> {
             int effect = base + Arrays.stream(params).sum();
@@ -40,6 +41,7 @@ public class ExtremeSpeed extends AbstractEasyCard {
         }, upgraded ? 1 : 0));
     }
 
+    @Override
     public void upp() {
         uDesc();
     }

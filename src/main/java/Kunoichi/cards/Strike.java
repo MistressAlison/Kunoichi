@@ -19,10 +19,12 @@ public class Strike extends AbstractEasyCard {
         tags.add(CardTags.STARTER_STRIKE);
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         dmg(m, AbstractGameAction.AttackEffect.SLASH_DIAGONAL);
     }
 
+    @Override
     public void upp() {
         upgradeDamage(3);
     }

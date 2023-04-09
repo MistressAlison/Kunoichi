@@ -25,6 +25,7 @@ public class PouchBlades extends AbstractEasyCard {
         baseMagicNumber = magicNumber = 3;
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (int i = 0 ; i < magicNumber ; i++) {
             if (m != null) {
@@ -34,6 +35,7 @@ public class PouchBlades extends AbstractEasyCard {
         }
     }
 
+    @Override
     public void upp() {
         upgradeBaseCost(1);
     }

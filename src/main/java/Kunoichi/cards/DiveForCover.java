@@ -20,11 +20,13 @@ public class DiveForCover extends AbstractEasyCard {
         baseMagicNumber = magicNumber = 1;
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
         Wiz.atb(new CleansePowerAction(p, magicNumber, c -> c.type == AbstractPower.PowerType.DEBUFF, powers -> {}));
     }
 
+    @Override
     public void upp() {
         upgradeBlock(3);
     }
