@@ -28,5 +28,9 @@
   "${ModID}:NextTurnPowerPower": {
     "NAME": "Next Turn ",
     "DESCRIPTIONS": ["Next turn, gain #b"," ","."]
+  },
+  "${ModID}:CounterDamagePower": {
+    "NAME": "Counter - Damage",
+    "DESCRIPTIONS": ["The next time you are attacked, deal #b"," damage back."]
   }
 }
