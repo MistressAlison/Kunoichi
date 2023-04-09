@@ -23,7 +23,7 @@
   },
   "${ModID}:Snipe": {
     "NAME": "Snipe",
-    "DESCRIPTION": "Discard a card to deal !D! damage and apply !M! kunoichi:Bleeding. Applies additional kunoichi:Bleeding equal to the card's cost.",
+    "DESCRIPTION": "Discard a card to deal !D! damage and apply kunoichi:Bleeding equal to its cost + !M!.",
     "EXTENDED_DESCRIPTION": ["I need another card to fire.","To Fire"]
   },
   "${ModID}:Strike": {

@@ -23,7 +23,7 @@ public class Snipe extends AbstractEasyCard {
 
     public Snipe() {
         super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        baseDamage = damage = 12;
+        baseDamage = damage = 10;
         baseMagicNumber = magicNumber = 3;
     }
 
