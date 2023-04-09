@@ -25,6 +25,7 @@ public class BleedPower extends AbstractEasyPower {
         this.loadRegion("brutality");
     }
 
+    @Override
     public void atStartOfTurn() {
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && !AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             this.flashWithoutSound();
@@ -32,6 +33,7 @@ public class BleedPower extends AbstractEasyPower {
         }
     }
 
+    @Override
     public void updateDescription() {
         if (this.owner != null && !this.owner.isPlayer) {
             this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
