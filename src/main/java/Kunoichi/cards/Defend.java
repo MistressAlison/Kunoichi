@@ -1,6 +1,8 @@
 package Kunoichi.cards;
 
 import Kunoichi.cards.abstracts.AbstractEasyCard;
+import Kunoichi.util.CardArtRoller;
+import com.megacrit.cardcrawl.cards.green.Defend_Green;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -21,5 +23,15 @@ public class Defend extends AbstractEasyCard {
 
     public void upp() {
         upgradeBlock(3);
+    }
+
+    @Override
+    public CardArtRoller.ReskinInfo reskinInfo(String ID) {
+        return new CardArtRoller.ReskinInfo(ID, 0.5f, 0.5f, 0.2f, 0.5f, false);
+    }
+
+    @Override
+    public String cardArtCopy() {
+        return Defend_Green.ID;
     }
 }
