@@ -5,6 +5,10 @@
     "UPGRADE_DESCRIPTION": "Upgrade description",
     "EXTENDED_DESCRIPTION": ["Extra Stuff"]
   },
+  "${ModID}:ConcussiveStrike": {
+    "NAME": "Concussive Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust."
+  },
   "${ModID}:DiveForCover": {
     "NAME": "Dive for Cover",
     "DESCRIPTION": "Gain !B! Block. NL Remove !M! of your debuffs."
@@ -30,6 +34,10 @@
   "${ModID}:HiddenSupplies": {
     "NAME": "Hidden Supplies",
     "DESCRIPTION": "stslib:Grave. NL Gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}. NL Draw !M! cards. NL Exhaust.{@@}"
+  },
+  "${ModID}:Infiltrate": {
+    "NAME": "Infiltrate",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Vulnerable to ALL enemies."
   },
   "${ModID}:PouchBlades": {
     "NAME": "Pouch Blades",
