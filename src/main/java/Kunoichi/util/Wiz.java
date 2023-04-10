@@ -182,4 +182,17 @@ public class Wiz {
     public static void applyToSelfNextTurn(AbstractPower po) {
         atb(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new NextTurnPowerPower(AbstractDungeon.player, po)));
     }
+
+    public static boolean isUnaware(AbstractMonster m) {
+        return m != null && !m.isDeadOrEscaped() && m.getIntentDmg() < 5;
+    }
+
+    public static boolean anyMonsterUnaware() {
+        for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
+            if (isUnaware(m)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

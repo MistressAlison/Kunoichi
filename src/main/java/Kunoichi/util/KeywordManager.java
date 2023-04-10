@@ -8,6 +8,7 @@ public class KeywordManager {
     public static String BLEEDING;
     public static String OPENER;
     public static String COUNTER;
+    public static String UNAWARE;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");

@@ -23,5 +23,13 @@
       "counter"
     ],
     "DESCRIPTION": "Effect triggers the next time you are attacked."
+  },
+  {
+    "ID": "unaware",
+    "PROPER_NAME": "Unaware",
+    "NAMES": [
+      "unaware"
+    ],
+    "DESCRIPTION": "Enemies that intend to deal #b5 or less damage are Unaware."
   }
 ]
