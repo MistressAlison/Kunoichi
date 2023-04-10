@@ -41,7 +41,7 @@ public class UnseenStrike extends AbstractEasyCard {
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
         for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
-            if (isNotAttacking(m)) {
+            if (!m.isDeadOrEscaped() && isNotAttacking(m)) {
                 this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
                 return;
             }
