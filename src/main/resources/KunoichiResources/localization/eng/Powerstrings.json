@@ -32,5 +32,9 @@
   "${ModID}:CounterDamagePower": {
     "NAME": "Counter - Damage",
     "DESCRIPTIONS": ["The next time you are attacked, deal #b"," damage back."]
+  },
+  "${ModID}:WeaknessExploitPower": {
+    "NAME": "Weakness Exploit",
+    "DESCRIPTIONS": ["Attacks deal #b","% more damage to enemies with #yVulnerable."]
   }
 }

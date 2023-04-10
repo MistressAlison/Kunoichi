@@ -7,7 +7,7 @@
   },
   "${ModID}:DiveForCover": {
     "NAME": "Dive for Cover",
-    "DESCRIPTION": "Gain !B! Block. NL Remove !M! of your debuff{!M!|>1=s}.{@@}"
+    "DESCRIPTION": "Gain !B! Block. NL Remove !M! of your debuffs."
   },
   "${ModID}:Decoy": {
     "NAME": "Decoy",
@@ -51,5 +51,9 @@
   "${ModID}:UnseenStrike": {
     "NAME": "Unseen Strike",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy does not intend to attack, deal !D! damage again."
+  },
+  "${ModID}:WeaknessExploit": {
+    "NAME": "Weakness Exploit",
+    "DESCRIPTION": "Attacks deal {!M!|0=0%|1=25%|2=50%|3=75%|4=100%|5=125%|6=150%|7=175%|8=200%|9=225%|10=250%|11=275%|12=300%|>12=substantially} more damage to enemies with Vulnerable.{@@}"
   }
 }
