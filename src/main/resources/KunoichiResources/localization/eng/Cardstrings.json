@@ -27,6 +27,10 @@
     "NAME": "Go for the Heart",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy has Vulnerable, apply !M! kunoichi:Bleeding."
   },
+  "${ModID}:HiddenSupplies": {
+    "NAME": "Hidden Supplies",
+    "DESCRIPTION": "stslib:Grave. NL Gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}. NL Draw !M! cards. NL Exhaust.{@@}"
+  },
   "${ModID}:PouchBlades": {
     "NAME": "Pouch Blades",
     "DESCRIPTION": "Deal !D! damage !M! times."
