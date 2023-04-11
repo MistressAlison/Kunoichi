@@ -63,6 +63,10 @@
     "NAME": "Rising Edge",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{!M!|>1=s}. NL kunoichi:Opener: {!M!|1=It costs 0 this turn|@=They cost 0 this turn}.{@@}"
   },
+  "${ModID}:SmokeBomb": {
+    "NAME": "Smoke Bomb",
+    "DESCRIPTION": "ALL enemies lose !M! Strength this turn. NL Exhaust."
+  },
   "${ModID}:Snipe": {
     "NAME": "Snipe",
     "DESCRIPTION": "Discard a card to deal !D! damage and apply kunoichi:Bleeding equal to its cost + !M!.",
