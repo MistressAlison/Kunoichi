@@ -67,6 +67,10 @@
     "NAME": "Prepare",
     "DESCRIPTION": "Gain !B! Block. NL kunoichi:Counter: Deal !M! damage back."
   },
+  "${ModID}:QuickDraw": {
+    "NAME": "Quick Draw",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL kunoichi:Opener: Gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} and draw !M! card{!M!|>1=s}.{@@}"
+  },
   "${ModID}:RisingEdge": {
     "NAME": "Rising Edge",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{!M!|>1=s}. NL kunoichi:Opener: {!M!|1=It costs 0 this turn|@=They cost 0 this turn}.{@@}"
