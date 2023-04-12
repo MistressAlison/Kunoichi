@@ -1,6 +1,5 @@
 package Kunoichi.cards;
 
-import Kunoichi.actions.AnimationAction;
 import Kunoichi.actions.DoIfAction;
 import Kunoichi.actions.InvertFlipAction;
 import Kunoichi.cards.abstracts.AbstractEasyCard;
@@ -8,13 +7,10 @@ import Kunoichi.cards.interfaces.SkillAnimationAttack;
 import Kunoichi.util.CardArtRoller;
 import Kunoichi.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.animations.AnimateFastAttackAction;
-import com.megacrit.cardcrawl.actions.animations.AnimateJumpAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.green.QuickSlash;
+import com.megacrit.cardcrawl.cards.green.Acrobatics;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
@@ -43,7 +39,6 @@ public class FlipKick extends AbstractEasyCard implements SkillAnimationAttack {
         addToBot(new WaitAction(0.3f));
         addToBot(new InvertFlipAction(true, false));
         addToBot(new WaitAction(0.4f));
-        //addToBot(new AnimationAction(AnimationAction.Animation.ATTACK));
         addToBot(new AbstractGameAction() {
             @Override
             public void update() {
@@ -67,18 +62,18 @@ public class FlipKick extends AbstractEasyCard implements SkillAnimationAttack {
     @Override
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.isEmpty()) {
+        if (Wiz.anyMonsterUnaware()) {
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         }
     }
 
     @Override
     public CardArtRoller.ReskinInfo reskinInfo(String ID) {
-        return new CardArtRoller.ReskinInfo(ID, 0.5f, 0.5f, 0.2f, 0.5f, false);
+        return new CardArtRoller.ReskinInfo(ID, 0.5f, 0.5f, 0.25f, 0.5f, false);
     }
 
     @Override
     public String cardArtCopy() {
-        return QuickSlash.ID;
+        return Acrobatics.ID;
     }
 }
