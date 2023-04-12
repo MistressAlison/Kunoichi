@@ -5,7 +5,7 @@ import Kunoichi.patches.OnUseEnergyPatches;
 import Kunoichi.util.CardArtRoller;
 import Kunoichi.util.Wiz;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.cards.purple.JustLucky;
+import com.megacrit.cardcrawl.cards.colorless.Finesse;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -42,7 +42,7 @@ public class ArteTanuki extends AbstractEasyCard implements OnUseEnergyPatches.O
 
     @Override
     public String cardArtCopy() {
-        return JustLucky.ID;
+        return Finesse.ID;
     }
 
     @Override
