@@ -84,7 +84,7 @@
   },
   "${ModID}:GoForTheHeart": {
     "NAME": "Go for the Heart",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Vulnerable, apply !M! kunoichi:Bleeding."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Vulnerable, apply !M! kunoichi:Exposed."
   },
   "${ModID}:HiddenSupplies": {
     "NAME": "Hidden Supplies",
@@ -149,7 +149,7 @@
   },
   "${ModID}:Snipe": {
     "NAME": "Snipe",
-    "DESCRIPTION": "Discard a card to deal !D! damage and apply kunoichi:Bleeding equal to its cost + !M!.",
+    "DESCRIPTION": "Discard a card to deal !D! damage and apply kunoichi:Exposed equal to its cost + !M!.",
     "EXTENDED_DESCRIPTION": ["I need another card to fire.","To Fire"]
   },
   "${ModID}:Strike": {

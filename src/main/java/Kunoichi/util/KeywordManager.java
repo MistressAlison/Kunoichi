@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class KeywordManager {
     public static HashMap<String, String> keywordMap = new HashMap<>();
-    public static String BLEEDING;
+    public static String EXPOSED;
     public static String OPENER;
     public static String COUNTER;
     public static String UNAWARE;

@@ -1,12 +1,12 @@
 [
   {
-    "ID": "bleeding",
-    "PROPER_NAME": "Bleeding",
+    "ID": "exposed",
+    "PROPER_NAME": "Exposed",
     "NAMES": [
-      "bleeding",
-      "bleed"
+      "expose",
+      "exposed"
     ],
-    "DESCRIPTION": "Bleeding creatures lose HP at the start of their turn."
+    "DESCRIPTION": "Exposed creatures take more damage from Attacks this turn."
   },
   {
     "ID": "opener",
@@ -56,6 +56,6 @@
       "shock",
       "shocked"
     ],
-    "DESCRIPTION": "Shocked creatures deal less damage this turn."
+    "DESCRIPTION": "Shocked creatures deal less damage with Attacks this turn."
   }
 ]

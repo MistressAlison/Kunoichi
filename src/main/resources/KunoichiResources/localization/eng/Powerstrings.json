@@ -3,10 +3,9 @@
     "NAME": "Ammo",
     "DESCRIPTIONS": ["Used to perform #yRanged attacks."]
   },
-  "${ModID}:BleedPower": {
-    "NAME": "Bleeding",
-    "DESCRIPTIONS": ["At the start of its turn, loses #b"," HP.",
-                    "At the start of your turn, lose #b"]
+  "${ModID}:ExposedPower": {
+    "NAME": "Exposed",
+    "DESCRIPTIONS": ["Takes #b"," more damage from Attacks this turn."]
   },
   "${ModID}:BloodlustPower": {
     "NAME": "Bloodlust",
