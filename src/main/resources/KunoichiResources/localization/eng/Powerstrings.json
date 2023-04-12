@@ -52,5 +52,9 @@
   "${ModID}:ShockPower": {
     "NAME": "Shocked",
     "DESCRIPTIONS": ["Deals #b"," less damage with Attacks this turn."]
+  },
+  "${ModID}:KirinFormPower": {
+    "NAME": "Kirin Form",
+    "DESCRIPTIONS": ["Whenever you deal unblocked attack damage, apply #b"," #yShock."]
   }
 }

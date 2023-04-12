@@ -94,6 +94,11 @@
     "NAME": "Infiltrate",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Vulnerable to ALL enemies."
   },
+  "${ModID}:KirinForm": {
+    "NAME": "Kirin Form",
+    "DESCRIPTION": "Ethereal. NL Whenever an Attack deals unblocked damage, apply !M! kunoichi:Shock.",
+    "UPGRADE_DESCRIPTION": "Whenever an Attack deals unblocked damage, apply !M! kunoichi:Shock."
+  },
   "${ModID}:LightningStrike": {
     "NAME": "Lightning Strike",
     "DESCRIPTION": "Deal !D! damage. NL Deal !Kunoichi:D2! damage to a random enemy twice."
