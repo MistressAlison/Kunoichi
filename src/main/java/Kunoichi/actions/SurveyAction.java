@@ -5,11 +5,16 @@ import basemod.BaseMod;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 import java.util.ArrayList;
 
+import static Kunoichi.KunoichiMod.makeID;
+
 public class SurveyAction extends AbstractGameAction {
+    public static String ID = makeID(SurveyAction.class.getSimpleName());
+    public static String[] TEXT = CardCrawlGame.languagePack.getUIString(ID).TEXT;
 
     public SurveyAction(int cardsToPickFrom) {
         this.amount = cardsToPickFrom;
@@ -33,7 +38,7 @@ public class SurveyAction extends AbstractGameAction {
                 cardsToPickFrom.add(c);
             }
         }
-        addToTop(new BetterSelectCardsCenteredAction(cardsToPickFrom, 1, "Fix Me", true, c -> true, l -> {
+        addToTop(new BetterSelectCardsCenteredAction(cardsToPickFrom, 1, TEXT[0], true, c -> true, l -> {
             for (AbstractCard c : l) {
                 if (Wiz.adp().hand.size() == BaseMod.MAX_HAND_SIZE) {
                     Wiz.adp().drawPile.moveToDiscardPile(c);

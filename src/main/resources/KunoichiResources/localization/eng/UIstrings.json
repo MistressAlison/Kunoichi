@@ -16,6 +16,12 @@
       "Enable Kunoichi Crossover Content"
     ]
   },
+  "${ModID}:SurveyAction": {
+    "TEXT": [
+      "Choose a card to add to your hand.",
+      "Choose "," cards to add to your hand."
+    ]
+  },
   "${ModID}:Envision": {
     "TEXT": [
       "Envision",
