@@ -26,6 +26,15 @@ public class Decoy extends AbstractEasyCard implements StartupCard {
     public void use(AbstractPlayer p, AbstractMonster m) {}
 
     @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        if (upgraded) {
+            this.cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
+            return false;
+        }
+        return super.canUse(p, m);
+    }
+
+    @Override
     public void upp() {
         isEthereal = true;
         exhaust = false;
