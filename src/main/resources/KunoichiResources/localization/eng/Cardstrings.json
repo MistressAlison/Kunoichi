@@ -75,6 +75,10 @@
     "NAME": "Quick Draw",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL kunoichi:Opener: Gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} and draw !M! card{!M!|>1=s}.{@@}"
   },
+  "${ModID}:Retaliate": {
+    "NAME": "Retaliate",
+    "DESCRIPTION": "If the enemy intends to attack, kunoichi:Counter: Deal !M! damage to ALL enemies."
+  },
   "${ModID}:RisingEdge": {
     "NAME": "Rising Edge",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{!M!|>1=s}. NL kunoichi:Opener: {!M!|1=It costs 0 this turn|@=They cost 0 this turn}.{@@}"

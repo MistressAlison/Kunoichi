@@ -30,8 +30,12 @@
     "DESCRIPTIONS": ["Next turn, gain #b"," ","."]
   },
   "${ModID}:CounterDamagePower": {
-    "NAME": "Counter - Damage",
+    "NAME": "Counter - Direct",
     "DESCRIPTIONS": ["The next time you are attacked, deal #b"," damage back."]
+  },
+  "${ModID}:CounterAOEDamagePower": {
+    "NAME": "Counter - Wide",
+    "DESCRIPTIONS": ["The next time you are attacked, deal #b"," to ALL enemies."]
   },
   "${ModID}:WeaknessExploitPower": {
     "NAME": "Weakness Exploit",

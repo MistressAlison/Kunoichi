@@ -7,19 +7,27 @@ import java.util.function.Supplier;
 
 public class DoIfAction extends AbstractGameAction {
     private Supplier<Boolean> check;
-    private Runnable process;
+    private Runnable doIf;
+    private Runnable doIfNot;
 
-    public DoIfAction(Supplier<Boolean> check, Runnable process) {
+    public DoIfAction(Supplier<Boolean> check, Runnable doIf) {
+        this(check, doIf, null);
+    }
+
+    public DoIfAction(Supplier<Boolean> check, Runnable doIf, Runnable doIfNot) {
         this.source = AbstractDungeon.player;
         this.actionType = ActionType.SPECIAL;
         this.check = check;
-        this.process = process;
+        this.doIf = doIf;
+        this.doIfNot = doIfNot;
     }
 
     @Override
     public void update() {
         if (check.get()) {
-            process.run();
+            doIf.run();
+        } else if (doIfNot != null) {
+            doIfNot.run();
         }
         this.isDone = true;
     }
