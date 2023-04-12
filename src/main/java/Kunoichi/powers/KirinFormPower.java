@@ -1,18 +1,11 @@
 package Kunoichi.powers;
 
-import Kunoichi.damageMods.WeaknessExploitDamage;
-import com.evacipated.cardcrawl.mod.stslib.damagemods.AbstractDamageModifier;
-import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.DamageModApplyingPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.powers.PoisonPower;
-
-import java.util.Collections;
-import java.util.List;
 
 import static Kunoichi.KunoichiMod.makeID;
 
@@ -33,6 +26,7 @@ public class KirinFormPower extends AbstractEasyPower {
         if (damageAmount > 0 && target != this.owner && info.type == DamageInfo.DamageType.NORMAL) {
             this.flash();
             this.addToTop(new ApplyPowerAction(target, this.owner, new ShockPower(target, this.amount), this.amount, true));
+            addToTop(new SFXAction("ORB_LIGHTNING_CHANNEL", 0.2f));
         }
     }
 

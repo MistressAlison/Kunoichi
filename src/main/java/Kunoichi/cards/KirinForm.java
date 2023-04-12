@@ -2,12 +2,11 @@ package Kunoichi.cards;
 
 import Kunoichi.cards.abstracts.AbstractEasyCard;
 import Kunoichi.powers.KirinFormPower;
-import Kunoichi.powers.WeaknessExploitPower;
 import Kunoichi.util.CardArtRoller;
 import Kunoichi.util.Wiz;
 import basemod.helpers.BaseModCardTags;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.blue.Storm;
-import com.megacrit.cardcrawl.cards.red.Intimidate;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -25,6 +24,7 @@ public class KirinForm extends AbstractEasyCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new SFXAction("ORB_LIGHTNING_EVOKE", 0.2f));
         Wiz.applyToSelf(new KirinFormPower(p, magicNumber));
     }
 
