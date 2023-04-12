@@ -128,7 +128,7 @@
   },
   "${ModID}:SmokeBomb": {
     "NAME": "Smoke Bomb",
-    "DESCRIPTION": "ALL enemies lose !M! Strength this turn. NL Exhaust."
+    "DESCRIPTION": "Gain !M! kunoichi:Evasion. NL Exhaust."
   },
   "${ModID}:Snipe": {
     "NAME": "Snipe",
