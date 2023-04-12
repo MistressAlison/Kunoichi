@@ -27,7 +27,7 @@ public class GoForTheHeart extends AbstractEasyCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         dmg(m, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL);
-        addToBot(new DoIfAction(() -> m.hasPower(VulnerablePower.POWER_ID), () -> addToTop(new ApplyPowerAction(m, p, new ExposedPower(m, p, magicNumber)))));
+        addToBot(new DoIfAction(() -> m.hasPower(VulnerablePower.POWER_ID), () -> addToTop(new ApplyPowerAction(m, p, new ExposedPower(m, magicNumber)))));
     }
 
     @Override

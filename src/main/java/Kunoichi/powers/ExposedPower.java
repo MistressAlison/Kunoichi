@@ -14,12 +14,9 @@ public class ExposedPower extends AbstractEasyPower {
     public static final String NAME = strings.NAME;
     public static final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
 
-    public AbstractCreature source;
-
-    public ExposedPower(AbstractCreature owner, AbstractCreature source, int amount) {
+    public ExposedPower(AbstractCreature owner, int amount) {
         super(NAME, PowerType.DEBUFF, true, owner, amount);
         this.ID = POWER_ID;
-        this.source = source;
         this.loadRegion("brutality");
         this.priority = -1;
     }

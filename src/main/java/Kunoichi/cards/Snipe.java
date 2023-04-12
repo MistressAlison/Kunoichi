@@ -33,7 +33,7 @@ public class Snipe extends AbstractEasyCard {
         addToBot(new SelectCardsInHandAction(1, cardStrings.EXTENDED_DESCRIPTION[1], l -> {
             for (AbstractCard c : l) {
                 int bonus = c.costForTurn == -1 ? EnergyPanel.totalCount : Math.max(c.costForTurn, 0);
-                Wiz.att(new ApplyPowerAction(m, p, new ExposedPower(m, p, magicNumber + bonus)));
+                Wiz.att(new ApplyPowerAction(m, p, new ExposedPower(m, magicNumber + bonus)));
                 Wiz.att(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL, true));
                 Wiz.att(new DiscardSpecificCardAction(c, Wiz.adp().hand));
             }
