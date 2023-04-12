@@ -36,7 +36,7 @@
     "DESCRIPTION": "Innate. NL Deal !D! damage. NL Deals double damage to kunoichi:Unaware enemies. NL Exhaust."
   },
   "${ModID}:BladeDance": {
-    "NAME": "Blade Dance",
+    "NAME": "Blade Dancing",
     "DESCRIPTION": "Deal !D! damage twice. NL The next {!M!|1=Attack you play costs 0|>1=!M! Attacks you play cost 0}.{@@}"
   },
   "${ModID}:Camouflage": {
@@ -69,6 +69,10 @@
     "NAME": "Extreme Speed",
     "DESCRIPTION": "Draw X cards. NL They cost 0 this turn. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Draw X+1 cards. NL They cost 0 this turn. NL Exhaust."
+  },
+  "${ModID}:FlashStep": {
+    "NAME": "Flash Steps",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card{!M!|>1=s}.{@@}"
   },
   "${ModID}:FlipKick": {
     "NAME": "Flip Kick",
