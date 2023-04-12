@@ -6,8 +6,6 @@ import Kunoichi.util.CardArtRoller;
 import Kunoichi.util.Wiz;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.status.VoidCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -34,8 +32,6 @@ public class SmokeBomb extends AbstractEasyCard {
             ApplyPowerAction strR = new ApplyPowerAction(m, p, new GainStrengthPower(mon, magicNumber));
             addToBot(new ApplyPowerActionWithFollowup(strD, strR));
         });
-        addToBot(new GainEnergyAction(magicNumber));
-        addToBot(new DrawCardAction(magicNumber));
     }
 
     @Override
