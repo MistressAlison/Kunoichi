@@ -13,6 +13,10 @@
     "NAME": "Camouflage",
     "DESCRIPTION": "Gain !B! Block. NL ALL enemies lose !M! Strength this turn. NL Exhaust."
   },
+  "${ModID}:CheckForTraps": {
+    "NAME": "Check for Traps",
+    "DESCRIPTION": "Gain !B! Block. NL kunoichi:Survey !M! cards."
+  },
   "${ModID}:ConcussiveStrike": {
     "NAME": "Concussive Strike",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust."

@@ -31,5 +31,14 @@
       "unaware"
     ],
     "DESCRIPTION": "Enemies that intend to deal #b5 or less damage are Unaware."
+  },
+  {
+    "ID": "survey",
+    "PROPER_NAME": "Survey",
+    "NAMES": [
+      "survey",
+      "surveyed"
+    ],
+    "DESCRIPTION": "Look at X random cards in your draw pile. You may add one of them to your hand."
   }
 ]
