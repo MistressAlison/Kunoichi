@@ -55,6 +55,10 @@
     "NAME": "Dive for Cover",
     "DESCRIPTION": "Gain !B! Block. NL Remove !M! of your debuffs."
   },
+  "${ModID}:CourtingDeath": {
+    "NAME": "Courting Death",
+    "DESCRIPTION": "Gain !M! Vulnerable. NL Your Attacks deal double damage for !M! turn{!M!|>1=s}.{@@}"
+  },
   "${ModID}:Decoy": {
     "NAME": "Decoy",
     "DESCRIPTION": "Exhaust. NL Startup: Gain !M! Intangible.",
