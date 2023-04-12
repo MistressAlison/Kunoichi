@@ -16,6 +16,13 @@
       "Enable Kunoichi Crossover Content"
     ]
   },
+  "${ModID}:Cleanse": {
+    "TEXT": [
+      "Cleanse",
+      "Choose a power to Cleanse.",
+      "Choose "," powers to Cleanse."
+    ]
+  },
   "${ModID}:SurveyAction": {
     "TEXT": [
       "Choose a card to add to your hand.",
