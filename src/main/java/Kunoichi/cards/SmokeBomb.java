@@ -28,8 +28,8 @@ public class SmokeBomb extends AbstractEasyCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new VFXAction(new SmokeBombEffect(p.hb.cX, p.hb.cY)));
         Wiz.forAllMonstersLiving(mon -> {
-            ApplyPowerAction strD =  new ApplyPowerAction(m, p, new StrengthPower(mon, -magicNumber));
-            ApplyPowerAction strR = new ApplyPowerAction(m, p, new GainStrengthPower(mon, magicNumber));
+            ApplyPowerAction strD =  new ApplyPowerAction(mon, p, new StrengthPower(mon, -magicNumber));
+            ApplyPowerAction strR = new ApplyPowerAction(mon, p, new GainStrengthPower(mon, magicNumber));
             addToBot(new ApplyPowerActionWithFollowup(strD, strR));
         });
     }
