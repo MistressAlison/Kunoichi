@@ -79,6 +79,10 @@
     "NAME": "Retaliate",
     "DESCRIPTION": "If the enemy intends to attack, kunoichi:Counter: Deal !M! damage to ALL enemies."
   },
+  "${ModID}:Riposte": {
+    "NAME": "Riposte",
+    "DESCRIPTION": "Gain !B! Block. NL kunoichi:Counter: Deal !M! damage and apply !Kunoichi:M2! Vulnerable back."
+  },
   "${ModID}:RisingEdge": {
     "NAME": "Rising Edge",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{!M!|>1=s}. NL kunoichi:Opener: {!M!|1=It costs 0 this turn|@=They cost 0 this turn}.{@@}"

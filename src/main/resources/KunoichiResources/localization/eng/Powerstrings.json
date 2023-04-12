@@ -37,6 +37,10 @@
     "NAME": "Counter - Wide",
     "DESCRIPTIONS": ["The next time you are attacked, deal #b"," to ALL enemies."]
   },
+  "${ModID}:CounterVulnPower": {
+    "NAME": "Counter - Riposte",
+    "DESCRIPTIONS": ["The next time you are attacked, apply #b"," #yVulnerable back."]
+  },
   "${ModID}:WeaknessExploitPower": {
     "NAME": "Weakness Exploit",
     "DESCRIPTIONS": ["Attacks deal #b","% more damage to enemies with #yVulnerable."]
