@@ -19,7 +19,7 @@ public class SmokeBomb extends AbstractEasyCard {
     public final static String ID = makeID(SmokeBomb.class.getSimpleName());
 
     public SmokeBomb() {
-        super(ID, 0, CardType.SKILL, CardRarity.COMMON, CardTarget.NONE);
+        super(ID, 0, CardType.SKILL, CardRarity.COMMON, CardTarget.ALL_ENEMY);
         baseMagicNumber = magicNumber = 3;
         exhaust = true;
     }
