@@ -4,17 +4,13 @@ import Kunoichi.actions.ApplyPowerActionWithFollowup;
 import Kunoichi.cards.abstracts.AbstractEasyCard;
 import Kunoichi.util.CardArtRoller;
 import Kunoichi.util.Wiz;
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.red.Berserk;
-import com.megacrit.cardcrawl.cards.status.VoidCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.GainStrengthPower;
 import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.vfx.combat.SmokeBombEffect;
 
 import static Kunoichi.KunoichiMod.makeID;
 
