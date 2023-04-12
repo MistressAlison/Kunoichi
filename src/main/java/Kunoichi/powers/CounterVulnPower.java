@@ -20,7 +20,7 @@ public class CounterVulnPower extends AbstractEasyPower {
     public static final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
 
     public CounterVulnPower(AbstractCreature owner, int amount) {
-        super(NAME, PowerType.BUFF, true, owner, amount);
+        super(NAME, PowerType.BUFF, false, owner, amount);
         this.ID = POWER_ID;
         this.loadRegion("noPain");
     }
