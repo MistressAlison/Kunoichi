@@ -86,6 +86,10 @@
     "NAME": "Infiltrate",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Vulnerable to ALL enemies."
   },
+  "${ModID}:LightningStrike": {
+    "NAME": "Lightning Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Deal !Kunoichi:D2! damage to a random enemy twice."
+  },
   "${ModID}:LightsOut": {
     "NAME": "Lights Out",
     "DESCRIPTION": "Deal !D! damage. NL If this kills an enemy, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@} and put this back into your hand."
