@@ -9,6 +9,10 @@
     "NAME": "Assassinate",
     "DESCRIPTION": "Innate. NL Deal !D! damage. NL Deals double damage to kunoichi:Unaware enemies. NL Exhaust."
   },
+  "${ModID}:Camouflage": {
+    "NAME": "Camouflage",
+    "DESCRIPTION": "Gain !B! Block. NL ALL enemies lose !M! Strength this turn. NL Exhaust."
+  },
   "${ModID}:ConcussiveStrike": {
     "NAME": "Concussive Strike",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust."
