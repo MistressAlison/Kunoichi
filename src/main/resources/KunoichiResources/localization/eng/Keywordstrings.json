@@ -40,5 +40,13 @@
       "surveyed"
     ],
     "DESCRIPTION": "Look at X random cards in your draw pile. You may add one of them to your hand."
+  },
+  {
+    "ID": "evasion",
+    "PROPER_NAME": "Evasion",
+    "NAMES": [
+      "evasion"
+    ],
+    "DESCRIPTION": "Take less damage from Attacks this turn."
   }
 ]

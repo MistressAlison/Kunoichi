@@ -44,5 +44,9 @@
   "${ModID}:WeaknessExploitPower": {
     "NAME": "Weakness Exploit",
     "DESCRIPTIONS": ["Attacks deal #b","% more damage to enemies with #yVulnerable."]
+  },
+  "${ModID}:EvasionPower": {
+    "NAME": "Evasion",
+    "DESCRIPTIONS": ["Take #b"," less damage from Attacks this turn."]
   }
 }

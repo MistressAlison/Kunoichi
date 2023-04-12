@@ -82,6 +82,10 @@
     "NAME": "Hidden Supplies",
     "DESCRIPTION": "stslib:Grave. NL Gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}. NL Draw !M! cards. NL Exhaust.{@@}"
   },
+  "${ModID}:Hightail": {
+    "NAME": "Hightail",
+    "DESCRIPTION": "Take !M! less damage from attacks this turn. NL Exhaust."
+  },
   "${ModID}:Infiltrate": {
     "NAME": "Infiltrate",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Vulnerable to ALL enemies."
