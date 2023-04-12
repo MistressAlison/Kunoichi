@@ -11,6 +11,7 @@ public class KeywordManager {
     public static String UNAWARE;
     public static String SURVEY;
     public static String EVASION;
+    public static String SHOCK;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");

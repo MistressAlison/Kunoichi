@@ -48,5 +48,14 @@
       "evasion"
     ],
     "DESCRIPTION": "Take less damage from Attacks this turn."
+  },
+  {
+    "ID": "shock",
+    "PROPER_NAME": "Shock",
+    "NAMES": [
+      "shock",
+      "shocked"
+    ],
+    "DESCRIPTION": "Shocked creatures deal less damage this turn."
   }
 ]

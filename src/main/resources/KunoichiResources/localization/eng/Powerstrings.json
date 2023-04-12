@@ -48,5 +48,9 @@
   "${ModID}:EvasionPower": {
     "NAME": "Evasion",
     "DESCRIPTIONS": ["Take #b"," less damage from Attacks this turn."]
+  },
+  "${ModID}:ShockPower": {
+    "NAME": "Shocked",
+    "DESCRIPTIONS": ["Deals #b"," less damage with Attacks this turn."]
   }
 }
