@@ -10,6 +10,11 @@
     "DESCRIPTION": "Unplayable. NL While in hand, gain !M! temporary Strength whenever you play another card.",
     "EXTENDED_DESCRIPTION": ["I can't play this card."]
   },
+  "${ModID}:ArteCrane": {
+    "NAME": "Arte - Crane Form",
+    "DESCRIPTION": "Unplayable. NL While in hand, deal !M! damage to a random enemy whenever you play an Attack.",
+    "EXTENDED_DESCRIPTION": ["I can't play this card."]
+  },
   "${ModID}:ArteDragon": {
     "NAME": "Arte - Dragon Form",
     "DESCRIPTION": "Unplayable. NL While in hand, deal !M! damage to ALL enemies whenever you play another card.",
@@ -32,7 +37,7 @@
   },
   "${ModID}:BladeDance": {
     "NAME": "Blade Dance",
-    "DESCRIPTION": "Deal !D! damage twice. NL Your next {!M!|1=attack costs 0|>1=!M! attacks cost 0}.{@@}"
+    "DESCRIPTION": "Deal !D! damage twice. NL The next {!M!|1=Attack you play costs 0|>1=!M! Attacks you play cost 0}.{@@}"
   },
   "${ModID}:Camouflage": {
     "NAME": "Camouflage",
