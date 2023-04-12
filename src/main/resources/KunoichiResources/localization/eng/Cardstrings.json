@@ -84,7 +84,7 @@
   },
   "${ModID}:Hightail": {
     "NAME": "Hightail",
-    "DESCRIPTION": "Take !M! less damage from attacks this turn. NL Exhaust."
+    "DESCRIPTION": "Gain !M! kunoichi:Evasion. NL Exhaust."
   },
   "${ModID}:Infiltrate": {
     "NAME": "Infiltrate",
