@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.Blur;
+import com.megacrit.cardcrawl.cards.green.Burst;
 import com.megacrit.cardcrawl.cards.green.Defend_Green;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -48,11 +49,11 @@ public class ExtremeSpeed extends AbstractEasyCard {
 
     @Override
     public CardArtRoller.ReskinInfo reskinInfo(String ID) {
-        return new CardArtRoller.ReskinInfo(ID, 0.5f, 0.5f, 0.2f, 0.5f, false);
+        return new CardArtRoller.ReskinInfo(ID, 0.5f, 0.5f, 0.25f, 0.5f, false);
     }
 
     @Override
     public String cardArtCopy() {
-        return Blur.ID;
+        return Burst.ID;
     }
 }
