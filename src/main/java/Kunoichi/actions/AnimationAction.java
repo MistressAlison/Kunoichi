@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 public class AnimationAction extends AbstractGameAction {
     public enum Animation {
         ATTACK,
-        BLOCK,
+        SKILL,
         HAPPY,
         HURT
     }

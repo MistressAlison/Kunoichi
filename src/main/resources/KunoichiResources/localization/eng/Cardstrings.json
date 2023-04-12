@@ -31,6 +31,10 @@
     "DESCRIPTION": "Draw X cards. NL They cost 0 this turn. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Draw X+1 cards. NL They cost 0 this turn. NL Exhaust."
   },
+  "${ModID}:FlipKick": {
+    "NAME": "Flip Kick",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy is kunoichi:Unaware, apply !M! Weak and Vulnerable."
+  },
   "${ModID}:GoForTheHeart": {
     "NAME": "Go for the Heart",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy has Vulnerable, apply !M! kunoichi:Bleeding."
