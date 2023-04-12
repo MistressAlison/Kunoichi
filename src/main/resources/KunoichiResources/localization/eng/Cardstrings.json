@@ -107,6 +107,10 @@
     "NAME": "Lights Out",
     "DESCRIPTION": "Deal !D! damage. NL If this kills an enemy, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@} and put this back into your hand."
   },
+  "${ModID}:MagnetPull": {
+    "NAME": "Magnet Pull",
+    "DESCRIPTION": "Put !M! random cards from your discard pile into your hand."
+  },
   "${ModID}:PouchBlades": {
     "NAME": "Pouch Blades",
     "DESCRIPTION": "Deal !D! damage !M! times."
