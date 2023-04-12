@@ -15,7 +15,7 @@ public class ShockPower extends AbstractEasyPower {
     public static final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
 
     public ShockPower(AbstractCreature owner, int amount) {
-        super(NAME, PowerType.DEBUFF, false, owner, amount);
+        super(NAME, PowerType.DEBUFF, true, owner, amount);
         this.ID = POWER_ID;
         this.loadRegion("static_discharge");
         this.priority = 10;

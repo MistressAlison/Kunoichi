@@ -15,7 +15,7 @@ public class EvasionPower extends AbstractEasyPower {
     public static final String[] DESCRIPTIONS = strings.DESCRIPTIONS;
 
     public EvasionPower(AbstractCreature owner, int amount) {
-        super(NAME, PowerType.BUFF, false, owner, amount);
+        super(NAME, PowerType.BUFF, true, owner, amount);
         this.ID = POWER_ID;
         this.loadRegion("flight");
         this.priority = 25;
