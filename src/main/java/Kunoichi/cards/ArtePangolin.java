@@ -20,7 +20,7 @@ public class ArtePangolin extends AbstractEasyCard {
     public final static String ID = makeID(ArtePangolin.class.getSimpleName());
 
     public ArtePangolin() {
-        super(ID, -2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
+        super(ID, -2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
         baseMagicNumber = magicNumber = 2;
     }
 

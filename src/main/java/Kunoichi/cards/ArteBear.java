@@ -22,7 +22,7 @@ public class ArteBear extends AbstractEasyCard {
     public final static String ID = makeID(ArteBear.class.getSimpleName());
 
     public ArteBear() {
-        super(ID, -2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
+        super(ID, -2, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
         baseMagicNumber = magicNumber = 1;
     }
 
