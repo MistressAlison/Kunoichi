@@ -9,6 +9,10 @@
     "NAME": "Assassinate",
     "DESCRIPTION": "Innate. NL Deal !D! damage. NL Deals double damage to kunoichi:Unaware enemies. NL Exhaust."
   },
+  "${ModID}:BladeDance": {
+    "NAME": "Blade Dance",
+    "DESCRIPTION": "Deal !D! damage twice. NL Your next {!M!|1=attack costs 0|>1=!M! attacks cost 0}.{@@}"
+  },
   "${ModID}:Camouflage": {
     "NAME": "Camouflage",
     "DESCRIPTION": "Gain !B! Block. NL ALL enemies lose !M! Strength this turn. NL Exhaust."
