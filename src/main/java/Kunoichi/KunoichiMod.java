@@ -1,6 +1,9 @@
 package Kunoichi;
 
 import Kunoichi.cards.cardvars.Info;
+import Kunoichi.powers.EvasionPower;
+import Kunoichi.powers.ExposedPower;
+import Kunoichi.powers.ShockPower;
 import Kunoichi.util.KeywordManager;
 import basemod.AutoAdd;
 import basemod.BaseMod;
@@ -29,7 +32,7 @@ public class KunoichiMod implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        EditCharactersSubscriber {
+        EditCharactersSubscriber, PostInitializeSubscriber {
 
     public static final String modID = "Kunoichi";
 
@@ -139,8 +142,7 @@ public class KunoichiMod implements
                 .cards();
     }
 
-    private void loadLangKeywords(String language)
-    {
+    private void loadLangKeywords(String language) {
         Gson gson = new Gson();
         Keyword[] keywords = null;
         try {
@@ -163,8 +165,7 @@ public class KunoichiMod implements
     }
 
     @Override
-    public void receiveEditKeywords()
-    {
+    public void receiveEditKeywords() {
         String language = Settings.language.name().toLowerCase();
         loadLangKeywords("eng");
         if (!language.equals("eng")) {
@@ -172,8 +173,7 @@ public class KunoichiMod implements
         }
     }
 
-    private void loadLangStrings(String language)
-    {
+    private void loadLangStrings(String language) {
         String path = modID+"Resources/localization/" + language + "/";
 
         tryLoadStringsFile(CardStrings.class,path + "Cardstrings.json");
@@ -186,8 +186,7 @@ public class KunoichiMod implements
         tryLoadStringsFile(UIStrings.class, path + "UIstrings.json");
     }
 
-    private void tryLoadStringsFile(Class<?> stringType, String filepath)
-    {
+    private void tryLoadStringsFile(Class<?> stringType, String filepath) {
         try {
             BaseMod.loadCustomStringsFile(stringType, filepath);
         } catch (GdxRuntimeException e) {
@@ -199,12 +198,18 @@ public class KunoichiMod implements
     }
 
     @Override
-    public void receiveEditStrings()
-    {
+    public void receiveEditStrings() {
         String language = Settings.language.name().toLowerCase();
         loadLangStrings("eng");
         if (!language.equals("eng")) {
             loadLangStrings(language);
         }
+    }
+
+    @Override
+    public void receivePostInitialize() {
+        BaseMod.addPower(ShockPower.class, ShockPower.POWER_ID);
+        BaseMod.addPower(EvasionPower.class, EvasionPower.POWER_ID);
+        BaseMod.addPower(ExposedPower.class, ExposedPower.POWER_ID);
     }
 }
