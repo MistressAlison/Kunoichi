@@ -57,5 +57,13 @@
       "shocked"
     ],
     "DESCRIPTION": "Shocked creatures deal less damage with Attacks this turn."
+  },
+  {
+    "ID": "agile",
+    "PROPER_NAME": "Agile",
+    "NAMES": [
+      "agile"
+    ],
+    "DESCRIPTION": "Deals additional damage equal to your #yEvasion."
   }
 ]
