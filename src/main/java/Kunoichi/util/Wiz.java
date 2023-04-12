@@ -195,4 +195,26 @@ public class Wiz {
         }
         return false;
     }
+
+    public static boolean isAttacking(AbstractMonster m) {
+        return m != null && m.getIntentBaseDmg() >= 0;
+    }
+
+    public static boolean anyMonsterAttacking() {
+        for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
+            if (isAttacking(m)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean anyMonsterNotAttacking() {
+        for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
+            if (!isAttacking(m)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
