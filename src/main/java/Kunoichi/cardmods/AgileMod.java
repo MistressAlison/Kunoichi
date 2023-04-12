@@ -14,6 +14,11 @@ import static Kunoichi.KunoichiMod.makeID;
 public class AgileMod extends AbstractCardModifier {
     public static String ID = makeID(AgileMod.class.getSimpleName());
     public static String[] TEXT = CardCrawlGame.languagePack.getCardStrings(ID).EXTENDED_DESCRIPTION;
+    private final boolean inherent;
+
+    public AgileMod(boolean inherent) {
+        this.inherent = inherent;
+    }
 
     @Override
     public float modifyDamage(float damage, DamageInfo.DamageType type, AbstractCard card, AbstractMonster target) {
@@ -32,10 +37,15 @@ public class AgileMod extends AbstractCardModifier {
     }
 
     public AbstractCardModifier makeCopy() {
-        return new AgileMod();
+        return new AgileMod(inherent);
     }
 
     public String identifier(AbstractCard card) {
         return ID;
+    }
+
+    @Override
+    public boolean isInherent(AbstractCard card) {
+        return inherent;
     }
 }
