@@ -5,6 +5,11 @@
     "UPGRADE_DESCRIPTION": "Upgrade description",
     "EXTENDED_DESCRIPTION": ["Extra Stuff"]
   },
+  "${ModID}:Antinomy": {
+    "NAME": "Antinomy",
+    "DESCRIPTION": "Whenever you trigger kunoichi:Counter, gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you trigger kunoichi:Counter, gain !M! Strength."
+  },
   "${ModID}:ArteBear": {
     "NAME": "Arte - Bear Form",
     "DESCRIPTION": "Unplayable. NL While in hand, gain !M! temporary Strength whenever you play another card.",

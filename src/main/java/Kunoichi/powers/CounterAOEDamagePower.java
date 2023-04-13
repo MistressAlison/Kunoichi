@@ -30,6 +30,7 @@ public class CounterAOEDamagePower extends AbstractEasyPower {
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner) {
             this.flash();
+            AntinomyPower.staticTrigger();
             addToTop(new RemoveSpecificPowerAction(owner, owner, this));
             addToTop(new DamageAllEnemiesAction(owner, DamageInfo.createDamageMatrix(amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
             addToTop(new VFXAction(owner, new CleaveEffect(), 0.1F));

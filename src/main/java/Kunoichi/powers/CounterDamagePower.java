@@ -3,14 +3,11 @@ package Kunoichi.powers;
 import Kunoichi.actions.AnimationAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import static Kunoichi.KunoichiMod.makeID;
 
@@ -30,6 +27,7 @@ public class CounterDamagePower extends AbstractEasyPower {
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.type != DamageInfo.DamageType.THORNS && info.type != DamageInfo.DamageType.HP_LOSS && info.owner != null && info.owner != this.owner) {
             this.flash();
+            AntinomyPower.staticTrigger();
             addToTop(new RemoveSpecificPowerAction(owner, owner, this));
             addToTop(new DamageAction(info.owner, new DamageInfo(this.owner, this.amount, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
             addToTop(new AnimationAction(AnimationAction.Animation.ATTACK));

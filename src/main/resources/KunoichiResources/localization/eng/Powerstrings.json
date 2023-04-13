@@ -59,5 +59,9 @@
   "${ModID}:QuickThinkingPower": {
     "NAME": "Quick Thinking",
     "DESCRIPTIONS": ["Whenever #ySurvey, you may take #b"," additional card."," additional cards."]
+  },
+  "${ModID}:AntinomyPower": {
+    "NAME": "Antinomy",
+    "DESCRIPTIONS": ["Whenever you trigger #yCounter, gain #b"," #yStrength."]
   }
 }
