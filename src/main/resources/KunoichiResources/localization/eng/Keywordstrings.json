@@ -65,5 +65,13 @@
       "agile"
     ],
     "DESCRIPTION": "Deals additional damage equal to your #yEvasion."
+  },
+  {
+    "ID": "clutch",
+    "PROPER_NAME": "Clutch",
+    "NAMES": [
+      "clutch"
+    ],
+    "DESCRIPTION": "#yRight #yClick to #yExhaust this card and trigger an effect."
   }
 ]
