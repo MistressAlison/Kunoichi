@@ -63,5 +63,9 @@
   "${ModID}:AntinomyPower": {
     "NAME": "Antinomy",
     "DESCRIPTIONS": ["Whenever you trigger #yCounter, gain #b"," #yStrength."]
+  },
+  "${ModID}:WindAndSparkPower": {
+    "NAME": "Wind and Spark",
+    "DESCRIPTIONS": ["Whenever you draw an #yUnplayable card, apply #b"," #yShock to ALL enemies."]
   }
 }
