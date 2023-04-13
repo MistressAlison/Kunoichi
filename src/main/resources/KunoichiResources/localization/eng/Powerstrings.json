@@ -67,5 +67,9 @@
   "${ModID}:WindAndSparkPower": {
     "NAME": "Wind and Spark",
     "DESCRIPTIONS": ["Whenever you draw an #yUnplayable card, apply #b"," #yShock to ALL enemies."]
+  },
+  "${ModID}:PressTheAdvantagePower": {
+    "NAME": "Press the Advantage",
+    "DESCRIPTIONS": ["Whenever you draw more than #b5 cards in a turn, gain #b"," #yBlock."]
   }
 }
