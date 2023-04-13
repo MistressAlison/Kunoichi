@@ -55,5 +55,9 @@
   "${ModID}:KirinFormPower": {
     "NAME": "Kirin Form",
     "DESCRIPTIONS": ["Whenever you deal unblocked attack damage, apply #b"," #yShock."]
+  },
+  "${ModID}:QuickThinkingPower": {
+    "NAME": "Quick Thinking",
+    "DESCRIPTIONS": ["Whenever #ySurvey, you may take #b"," additional card."," additional cards."]
   }
 }

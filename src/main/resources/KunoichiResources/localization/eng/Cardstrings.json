@@ -131,6 +131,10 @@
     "NAME": "Quick Draw",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL kunoichi:Opener: Gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} and draw !M! card{!M!|>1=s}.{@@}"
   },
+  "${ModID}:QuickThinking": {
+    "NAME": "Quick Thinking",
+    "DESCRIPTION": "Whenever you kunoichi:Survey, you may take an additional card."
+  },
   "${ModID}:Raikiri": {
     "NAME": "Raikiri",
     "DESCRIPTION": "Deal !D! damage and apply !M! kunoichi:Shock to ALL enemies."

@@ -26,7 +26,7 @@
   "${ModID}:SurveyAction": {
     "TEXT": [
       "Choose a card to add to your hand.",
-      "Choose "," cards to add to your hand."
+      "Choose up to "," cards to add to your hand."
     ]
   },
   "${ModID}:Envision": {
