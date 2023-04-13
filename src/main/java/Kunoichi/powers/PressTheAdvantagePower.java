@@ -1,6 +1,5 @@
 package Kunoichi.powers;
 
-import Kunoichi.util.Wiz;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
