@@ -177,6 +177,10 @@
     "NAME": "Trailblazer",
     "DESCRIPTION": "Increase the cards played threshold for kunoichi:Opener effects by !M!."
   },
+  "${ModID}:Truesight": {
+    "NAME": "Truesight",
+    "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. NL The next {!Kunoichi:M2!|1=Attack you play costs 0|>1=!Kunoichi:M2! Attacks you play cost 0}{@@}. NL Exhaust."
+  },
   "${ModID}:UnseenStrike": {
     "NAME": "Unseen Strike",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy does not intend to attack, deal !D! damage again."
