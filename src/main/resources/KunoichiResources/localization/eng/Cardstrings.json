@@ -60,6 +60,11 @@
     "NAME": "Dive for Cover",
     "DESCRIPTION": "Gain !B! Block. NL Remove !M! of your debuffs."
   },
+  "${ModID}:EntryPlan": {
+    "NAME": "Entry Plan",
+    "DESCRIPTION": "Put {!M!|1=a random Attack and Skill|>1=!M! random Attacks and Skills}{@@} from your draw pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Put {!M!|1=a random Attack and Skill|>1=!M! random Attacks and Skills}{@@} from your draw pile into your hand. NL Exhaust."
+  },
   "${ModID}:CourtingDeath": {
     "NAME": "Courting Death",
     "DESCRIPTION": "Gain !M! Vulnerable. NL Your Attacks deal double damage for !M! turn{!M!|>1=s}.{@@}"
