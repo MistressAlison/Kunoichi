@@ -1,17 +1,12 @@
 package Kunoichi.cards;
 
-import Kunoichi.actions.ApplyPowerActionWithFollowup;
 import Kunoichi.cards.abstracts.AbstractEasyCard;
+import Kunoichi.powers.EvasionPower;
 import Kunoichi.util.CardArtRoller;
 import Kunoichi.util.Wiz;
-import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.red.Armaments;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.GainStrengthPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.vfx.combat.SmokeBombEffect;
 
 import static Kunoichi.KunoichiMod.makeID;
 
@@ -28,11 +23,7 @@ public class Camouflage extends AbstractEasyCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
-        Wiz.forAllMonstersLiving(mon -> {
-            ApplyPowerAction strD = new ApplyPowerAction(mon, p, new StrengthPower(mon, -magicNumber));
-            ApplyPowerAction strR = new ApplyPowerAction(mon, p, new GainStrengthPower(mon, magicNumber));
-            addToBot(new ApplyPowerActionWithFollowup(strD, strR));
-        });
+        Wiz.applyToSelf(new EvasionPower(p, magicNumber));
     }
 
     @Override
