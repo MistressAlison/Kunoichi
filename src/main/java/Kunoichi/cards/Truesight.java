@@ -1,10 +1,8 @@
 package Kunoichi.cards;
 
 import Kunoichi.cards.abstracts.AbstractEasyCard;
-import Kunoichi.powers.EvasionPower;
 import Kunoichi.util.CardArtRoller;
 import Kunoichi.util.Wiz;
-import com.megacrit.cardcrawl.cards.green.Expertise;
 import com.megacrit.cardcrawl.cards.red.SeeingRed;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
