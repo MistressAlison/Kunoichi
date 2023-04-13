@@ -7,6 +7,7 @@ import Kunoichi.cards.interfaces.SkillAnimationAttack;
 import Kunoichi.util.CardArtRoller;
 import Kunoichi.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.Acrobatics;
@@ -29,6 +30,7 @@ public class FlipKick extends AbstractEasyCard implements SkillAnimationAttack {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new InvertFlipAction(true, false));
+        addToBot(new SFXAction("ATTACK_WHIFF_1", 0.2f));
         addToBot(new AbstractGameAction() {
             @Override
             public void update() {
