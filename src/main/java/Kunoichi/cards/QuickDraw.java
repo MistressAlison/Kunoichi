@@ -1,6 +1,6 @@
 package Kunoichi.cards;
 
-import Kunoichi.actions.DoIfAction;
+import Kunoichi.actions.OpenerAction;
 import Kunoichi.cards.abstracts.AbstractEasyCard;
 import Kunoichi.util.CardArtRoller;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.red.PerfectedStrike;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 
@@ -32,10 +31,10 @@ public class QuickDraw extends AbstractEasyCard {
         addToBot(new SFXAction("ATTACK_HEAVY"));
         addToBot(new VFXAction(p, new CleaveEffect(), 0.1F));
         allDmg(AbstractGameAction.AttackEffect.NONE);
-        addToBot(new DrawCardAction(magicNumber, new DoIfAction(() -> AbstractDungeon.actionManager.cardsPlayedThisTurn.size() == 1, () -> {
+        addToBot(new OpenerAction(() -> {
             addToTop(new DrawCardAction(magicNumber));
             addToTop(new GainEnergyAction(magicNumber));
-        })));
+        }));
     }
 
     @Override
@@ -46,7 +45,7 @@ public class QuickDraw extends AbstractEasyCard {
     @Override
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.isEmpty()) {
+        if (OpenerAction.openerGlowCheck()) {
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         }
     }

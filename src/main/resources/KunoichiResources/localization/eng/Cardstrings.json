@@ -173,6 +173,10 @@
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
   },
+  "${ModID}:Trailblazer": {
+    "NAME": "Trailblazer",
+    "DESCRIPTION": "Increase the cards played threshold for kunoichi:Opener effects by !M!."
+  },
   "${ModID}:UnseenStrike": {
     "NAME": "Unseen Strike",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy does not intend to attack, deal !D! damage again."

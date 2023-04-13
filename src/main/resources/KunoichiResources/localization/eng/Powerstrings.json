@@ -71,5 +71,9 @@
   "${ModID}:PressTheAdvantagePower": {
     "NAME": "Press the Advantage",
     "DESCRIPTIONS": ["Whenever you draw more than #b5 cards in a turn, gain #b"," #yBlock."]
+  },
+  "${ModID}:TrailblazerPower": {
+    "NAME": "Trailblazer",
+    "DESCRIPTIONS": ["Increases the threshold for #yOpener cards by #b","."]
   }
 }
