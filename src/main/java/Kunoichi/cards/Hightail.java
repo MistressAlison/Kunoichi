@@ -14,8 +14,8 @@ public class Hightail extends AbstractEasyCard {
     public final static String ID = makeID(Hightail.class.getSimpleName());
 
     public Hightail() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
-        baseMagicNumber = magicNumber = 6;
+        super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
+        baseMagicNumber = magicNumber = 7;
         exhaust = true;
     }
 
@@ -26,7 +26,7 @@ public class Hightail extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(2);
+        upgradeMagicNumber(3);
     }
 
     @Override
