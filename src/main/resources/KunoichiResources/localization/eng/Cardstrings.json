@@ -190,6 +190,10 @@
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
   },
+  "${ModID}:ThunderWave": {
+    "NAME": "Thunder Wave",
+    "DESCRIPTION": "Apply !M! kunoichi:Shock to ALL enemies. NL Exhaust."
+  },
   "${ModID}:Trailblazer": {
     "NAME": "Trailblazer",
     "DESCRIPTION": "Increase the cards played threshold for kunoichi:Opener effects by !M!."
