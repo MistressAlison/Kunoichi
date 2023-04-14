@@ -30,7 +30,7 @@
     "NAMES": [
       "unaware"
     ],
-    "DESCRIPTION": "Enemies that intend to deal #b5 or less damage are Unaware."
+    "DESCRIPTION": "Enemies that do not intend to attack, or intend to deal #b5 or less damage are Unaware."
   },
   {
     "ID": "survey",
