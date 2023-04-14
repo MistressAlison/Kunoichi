@@ -169,6 +169,10 @@
     "NAME": "Shadow Blade",
     "DESCRIPTION": "Deal !D! damage. NL kunoichi:Counter: Deal this card's damage back."
   },
+  "${ModID}:ShockingGrasp": {
+    "NAME": "Shocking Grasp",
+    "DESCRIPTION": "Deal !D! damage. NL Ignores Block."
+  },
   "${ModID}:SmokeBomb": {
     "NAME": "Smoke Bomb",
     "DESCRIPTION": "Gain !M! kunoichi:Evasion. NL Exhaust."
