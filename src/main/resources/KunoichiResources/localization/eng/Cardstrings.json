@@ -79,6 +79,10 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "${ModID}:EnsnaringStrike": {
+    "NAME": "Ensnaring Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
+  },
   "${ModID}:ExtremeSpeed": {
     "NAME": "Extreme Speed",
     "DESCRIPTION": "Draw X cards. NL They cost 0 this turn. NL Exhaust.",
