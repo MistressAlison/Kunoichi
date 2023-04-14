@@ -84,6 +84,11 @@
     "DESCRIPTION": "Draw X cards. NL They cost 0 this turn. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Draw X+1 cards. NL They cost 0 this turn. NL Exhaust."
   },
+  "${ModID}:FindThePath": {
+    "NAME": "Find the Path",
+    "DESCRIPTION": "Retain. NL Put a card from your discard pile on top of your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Put a card from your discard pile on top of your draw pile."
+  },
   "${ModID}:FlashStep": {
     "NAME": "Flash Steps",
     "DESCRIPTION": "Gain !B! Block. NL Draw !M! card{!M!|>1=s}.{@@}"
