@@ -125,6 +125,10 @@
     "NAME": "Magnet Pull",
     "DESCRIPTION": "Put !M! random cards from your discard pile into your hand."
   },
+  "${ModID}:Mislead": {
+    "NAME": "Mislead",
+    "DESCRIPTION": "Gain !B! Block. NL If the enemy intends to attack, apply !M! Weak."
+  },
   "${ModID}:PouchBlades": {
     "NAME": "Pouch Blades",
     "DESCRIPTION": "Deal !D! damage !M! times."
