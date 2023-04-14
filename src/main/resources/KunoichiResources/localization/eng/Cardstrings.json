@@ -52,6 +52,10 @@
     "NAME": "Check for Traps",
     "DESCRIPTION": "Gain !B! Block. NL kunoichi:Survey !M! cards."
   },
+  "${ModID}:Clairvoyance": {
+    "NAME": "Clairvoyance",
+    "DESCRIPTION": "Draw !M! cards. NL kunoichi:Survey !M! cards."
+  },
   "${ModID}:ConcussiveStrike": {
     "NAME": "Concussive Strike",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust."
