@@ -37,7 +37,7 @@ public class ThunderWave extends AbstractEasyCard {
 
     @Override
     public CardArtRoller.ReskinInfo reskinInfo(String ID) {
-        return new CardArtRoller.ReskinInfo(ID, 0.12f, 0.5f, 0.5f, 0.5f, false);
+        return new CardArtRoller.ReskinInfo(ID, 0.08f, 0.5f, 0.5f, 0.5f, false);
     }
 
     @Override
