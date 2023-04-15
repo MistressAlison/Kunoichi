@@ -216,7 +216,7 @@
   },
   "${ModID}:Retaliate": {
     "NAME": "Retaliate",
-    "DESCRIPTION": "If the enemy intends to attack, kunoichi:Counter: Deal !M! damage to ALL enemies."
+    "DESCRIPTION": "kunoichi:Agile. NL kunoichi:Counter: Deal !M! damage to ALL enemies."
   },
   "${ModID}:Riposte": {
     "NAME": "Riposte",

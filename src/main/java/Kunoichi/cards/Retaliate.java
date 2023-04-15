@@ -1,18 +1,14 @@
 package Kunoichi.cards;
 
-import Kunoichi.actions.DoIfAction;
 import Kunoichi.cards.abstracts.AbstractEasyCard;
 import Kunoichi.powers.CounterAOEDamagePower;
+import Kunoichi.powers.EvasionPower;
 import Kunoichi.util.CardArtRoller;
 import Kunoichi.util.Wiz;
-import com.megacrit.cardcrawl.actions.unique.SpotWeaknessAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.red.Cleave;
-import com.megacrit.cardcrawl.cards.red.Havoc;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.vfx.ThoughtBubble;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static Kunoichi.KunoichiMod.makeID;
 
@@ -20,15 +16,13 @@ public class Retaliate extends AbstractEasyCard {
     public final static String ID = makeID(Retaliate.class.getSimpleName());
 
     public Retaliate() {
-        super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.SELF);
         baseMagicNumber = magicNumber = 12;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DoIfAction(() -> Wiz.isAttacking(m),
-                () -> Wiz.applyToSelfTop(new CounterAOEDamagePower(p, magicNumber)),
-                () -> AbstractDungeon.effectList.add(new ThoughtBubble(p.dialogX, p.dialogY, 3.0F, SpotWeaknessAction.TEXT[0], true))));
+        Wiz.applyToSelf(new CounterAOEDamagePower(p, magicNumber));
     }
 
     @Override
@@ -37,11 +31,25 @@ public class Retaliate extends AbstractEasyCard {
     }
 
     @Override
-    public void triggerOnGlowCheck() {
-        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        if (Wiz.anyMonsterAttacking()) {
-            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+    public void applyPowers() {
+        magicNumber = baseMagicNumber;
+        super.applyPowers();
+        AbstractPower p = Wiz.adp().getPower(EvasionPower.POWER_ID);
+        if (p != null) {
+            magicNumber += p.amount;
         }
+        isMagicNumberModified = magicNumber != baseMagicNumber;
+    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        magicNumber = baseMagicNumber;
+        super.calculateCardDamage(mo);
+        AbstractPower p = Wiz.adp().getPower(EvasionPower.POWER_ID);
+        if (p != null) {
+            magicNumber += p.amount;
+        }
+        isMagicNumberModified = magicNumber != baseMagicNumber;
     }
 
     @Override
