@@ -44,6 +44,10 @@
     "NAME": "Blade Dancing",
     "DESCRIPTION": "Deal !D! damage twice. NL The next {!M!|1=Attack you play costs 0|>1=!M! Attacks you play cost 0}.{@@}"
   },
+  "${ModID}:Breather": {
+    "NAME": "Breather",
+    "DESCRIPTION": "Next turn, gain {!Kunoichi:M2!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!KunoichiM:2! [E]}. NL kunoichi:Counter: Deal !M! damage back.{@@}"
+  },
   "${ModID}:Camouflage": {
     "NAME": "Camouflage",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! kunoichi:Evasion. NL Exhaust."
