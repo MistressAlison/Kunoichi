@@ -79,5 +79,9 @@
   "${ModID}:FearIsTheWeaknessPower": {
     "NAME": "Fear is the Weakness",
     "DESCRIPTIONS": ["At the start of your turn, gain #b"," #yStrength for each enemy that intends to attack."]
+  },
+  "${ModID}:TirelessSpiritPower": {
+    "NAME": "Tireless Spirit",
+    "DESCRIPTIONS": ["You may play a card you do not have the #yEnergy for once per turn.","You may play a card you do not have the #yEnergy for #b", " times per turn."]
   }
 }

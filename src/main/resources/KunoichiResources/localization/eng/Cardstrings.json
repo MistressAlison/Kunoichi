@@ -243,6 +243,10 @@
     "NAME": "Thunder Wave",
     "DESCRIPTION": "Apply !M! kunoichi:Shock to ALL enemies. NL Exhaust."
   },
+  "${ModID}:TirelessSpirit": {
+    "NAME": "Tireless Spirit",
+    "DESCRIPTION": "You may play a card you do not have the Energy for {!M!|1=once|>1=!M! times} per turn.{@@}"
+  },
   "${ModID}:Trailblazer": {
     "NAME": "Trailblazer",
     "DESCRIPTION": "Increase the cards played threshold for kunoichi:Opener effects by !M!."

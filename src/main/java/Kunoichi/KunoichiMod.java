@@ -4,9 +4,12 @@ import Kunoichi.cards.cardvars.Info;
 import Kunoichi.powers.EvasionPower;
 import Kunoichi.powers.ExposedPower;
 import Kunoichi.powers.ShockPower;
+import Kunoichi.powers.TirelessSpiritPower;
 import Kunoichi.util.KeywordManager;
+import Kunoichi.util.Wiz;
 import basemod.AutoAdd;
 import basemod.BaseMod;
+import basemod.helpers.CardBorderGlowManager;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
@@ -15,9 +18,11 @@ import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import Kunoichi.cards.cardvars.SecondDamage;
 import Kunoichi.cards.cardvars.SecondMagicNumber;
@@ -211,5 +216,26 @@ public class KunoichiMod implements
         BaseMod.addPower(ShockPower.class, ShockPower.POWER_ID);
         BaseMod.addPower(EvasionPower.class, EvasionPower.POWER_ID);
         BaseMod.addPower(ExposedPower.class, ExposedPower.POWER_ID);
+
+        CardBorderGlowManager.addGlowInfo(new CardBorderGlowManager.GlowInfo() {
+            private final Color PURPLE = new Color(-935526465);
+            @Override
+            public boolean test(AbstractCard c) {
+                if (Wiz.adp().hasPower(TirelessSpiritPower.POWER_ID) && c.costForTurn > 0) {
+                    return c.costForTurn > EnergyPanel.getCurrentEnergy();
+                }
+                return false;
+            }
+
+            @Override
+            public Color getColor(AbstractCard c) {
+                return PURPLE.cpy();
+            }
+
+            @Override
+            public String glowID() {
+                return TirelessSpiritPower.POWER_ID+"Glow";
+            }
+        });
     }
 }
