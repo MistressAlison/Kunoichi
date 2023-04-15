@@ -1,8 +1,10 @@
 package Kunoichi.cards;
 
 import Kunoichi.actions.SurveyAction;
+import Kunoichi.cardmods.AgileMod;
 import Kunoichi.cards.abstracts.AbstractEasyCard;
 import Kunoichi.util.CardArtRoller;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.red.PommelStrike;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -18,6 +20,7 @@ public class SmashAndGrab extends AbstractEasyCard {
         baseDamage = damage = 9;
         baseMagicNumber = magicNumber = 2;
         tags.add(CardTags.STRIKE);
+        CardModifierManager.addModifier(this, new AgileMod(true));
     }
 
     @Override

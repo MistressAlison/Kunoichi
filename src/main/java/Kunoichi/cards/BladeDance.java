@@ -1,8 +1,10 @@
 package Kunoichi.cards;
 
+import Kunoichi.cardmods.AgileMod;
 import Kunoichi.cards.abstracts.AbstractEasyCard;
 import Kunoichi.util.CardArtRoller;
 import Kunoichi.util.Wiz;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -22,6 +24,7 @@ public class BladeDance extends AbstractEasyCard {
         super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
         baseDamage = damage = 7;
         baseMagicNumber = magicNumber = 1;
+        CardModifierManager.addModifier(this, new AgileMod(true));
     }
 
     @Override
