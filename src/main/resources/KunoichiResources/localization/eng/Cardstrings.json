@@ -202,6 +202,10 @@
     "NAME": "Press the Advantage",
     "DESCRIPTION": "Whenever you draw more than 5 cards in a turn, gain !M! Block."
   },
+  "${ModID}:Pulse": {
+    "NAME": "Pulse",
+    "DESCRIPTION": "Gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@}. NL Exhaust. NL kunoichi:Opener: Don't Exhaust."
+  },
   "${ModID}:QuickDraw": {
     "NAME": "Quick Draw",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL kunoichi:Opener: Gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]} and draw !M! card{!M!|>1=s}.{@@}"
