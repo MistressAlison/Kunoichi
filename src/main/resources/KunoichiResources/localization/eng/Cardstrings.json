@@ -219,6 +219,10 @@
     "NAME": "Trailblazer",
     "DESCRIPTION": "Increase the cards played threshold for kunoichi:Opener effects by !M!."
   },
+  "${ModID}:TreeShroud": {
+    "NAME": "Tree Shroud",
+    "DESCRIPTION": "Gain !M! kunoichi:Evasion. NL kunoichi:Survey !Kunoichi:M2! card{!Kunoichi:M2!|>1=s}.{@@}"
+  },
   "${ModID}:Tromp": {
     "NAME": "Tromp",
     "DESCRIPTION": "Deal !D! damage !M! times."
