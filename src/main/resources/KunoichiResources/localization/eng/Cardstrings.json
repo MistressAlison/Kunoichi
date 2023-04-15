@@ -125,6 +125,10 @@
     "NAME": "Hightail",
     "DESCRIPTION": "Gain !M! kunoichi:Evasion. NL Exhaust."
   },
+  "${ModID}:Indomitable": {
+    "NAME": "Indomitable",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Artifact. NL Exhaust."
+  },
   "${ModID}:Infiltrate": {
     "NAME": "Infiltrate",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Vulnerable to ALL enemies."
