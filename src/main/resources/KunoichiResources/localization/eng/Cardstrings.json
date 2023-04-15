@@ -186,6 +186,10 @@
     "NAME": "Raikiri",
     "DESCRIPTION": "Deal !D! damage and apply !M! kunoichi:Shock to ALL enemies."
   },
+  "${ModID}:RelentlessAssault": {
+    "NAME": "Relentless Assault",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Increase this card's hits by !Kunoichi:M2! this combat."
+  },
   "${ModID}:Retaliate": {
     "NAME": "Retaliate",
     "DESCRIPTION": "If the enemy intends to attack, kunoichi:Counter: Deal !M! damage to ALL enemies."
