@@ -259,6 +259,10 @@
     "NAME": "Survivalist",
     "DESCRIPTION": "Gain !B! Block. NL Exhaust up to !M! cards in your hand. NL Exhaust."
   },
+  "${ModID}:ThunderStep": {
+    "NAME": "Thunder Steps",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! kunoichi:Shock to ALL enemies."
+  },
   "${ModID}:ThunderWave": {
     "NAME": "Thunder Wave",
     "DESCRIPTION": "Apply !M! kunoichi:Shock to ALL enemies. NL Exhaust."
