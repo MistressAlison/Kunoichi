@@ -194,6 +194,10 @@
     "NAME": "Shocking Grasp",
     "DESCRIPTION": "Deal !D! damage. NL Ignores Block."
   },
+  "${ModID}:SmashAndGrab": {
+    "NAME": "Smash and Grab",
+    "DESCRIPTION": "Deal !D! damage. NL kunoichi:Survey !M! cards."
+  },
   "${ModID}:SmokeBomb": {
     "NAME": "Smoke Bomb",
     "DESCRIPTION": "Gain !M! kunoichi:Evasion. NL Exhaust."
