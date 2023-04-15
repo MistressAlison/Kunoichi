@@ -176,7 +176,7 @@
   },
   "${ModID}:LightsOut": {
     "NAME": "Lights Out",
-    "DESCRIPTION": "Deal !D! damage. NL If this kills an enemy, gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}{@@} and put this back into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL If this kills an enemy, draw !M! card{!M!|>1=s}{@@}. NL {!M!|1=It costs|1>=They cost} 0 this turn."
   },
   "${ModID}:MagnetPull": {
     "NAME": "Magnet Pull",
