@@ -95,5 +95,10 @@
   "${ModID}:AmbushMasterPower": {
     "NAME": "Ambush Master",
     "DESCRIPTIONS": ["Whenever a card is #yExhausted, apply #b"," #yExposed to ALL enemies."]
+  },
+  "${ModID}:SequesterPower": {
+    "NAME": "Sequester",
+    "DESCRIPTIONS": ["At the start of your next turn, add a "," into your hand.",
+                    "At the start of your next #b"," turns, add a "," into your hand."]
   }
 }

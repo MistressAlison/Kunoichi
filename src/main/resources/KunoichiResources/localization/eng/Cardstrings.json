@@ -230,6 +230,11 @@
     "NAME": "Rising Edge",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{!M!|>1=s}. NL kunoichi:Opener: {!M!|1=It costs 0 this turn|@=They cost 0 this turn}.{@@}"
   },
+  "${ModID}:Sequester": {
+    "NAME": "Sequester",
+    "DESCRIPTION": "Exhaust a card. NL At the start of your next !M! turns, add a copy of it into your hand.",
+    "EXTENDED_DESCRIPTION": ["I need another card to Exhaust.","To Exhaust"]
+  },
   "${ModID}:ShadowBlade": {
     "NAME": "Shadow Blade",
     "DESCRIPTION": "Deal !D! damage. NL kunoichi:Counter: Deal this card's damage back."
