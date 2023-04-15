@@ -75,5 +75,9 @@
   "${ModID}:TrailblazerPower": {
     "NAME": "Trailblazer",
     "DESCRIPTIONS": ["Increases the threshold for #yOpener cards by #b","."]
+  },
+  "${ModID}:FearIsTheWeaknessPower": {
+    "NAME": "Fear is the Weakness",
+    "DESCRIPTIONS": ["At the start of your turn, gain #b"," #yStrength for each enemy that intends to attack."]
   }
 }
