@@ -5,6 +5,10 @@
     "UPGRADE_DESCRIPTION": "Upgrade description",
     "EXTENDED_DESCRIPTION": ["Extra Stuff"]
   },
+  "${ModID}:AmbushMaster": {
+    "NAME": "Ambush Master",
+    "DESCRIPTION": "Whenever a card is Exhausted, apply !M! kunoichi:Exposed to ALL enemies."
+  },
   "${ModID}:Antinomy": {
     "NAME": "Antinomy",
     "DESCRIPTION": "Whenever you trigger kunoichi:Counter, gain !M! Strength.",

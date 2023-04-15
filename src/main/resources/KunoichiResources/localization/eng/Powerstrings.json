@@ -91,5 +91,9 @@
   "${ModID}:WeaponsReadyPower": {
     "NAME": "Weapons Ready",
     "DESCRIPTIONS": ["At the end of your turn, gain #yCounter: Deal #b"," damage back."]
+  },
+  "${ModID}:AmbushMasterPower": {
+    "NAME": "Ambush Master",
+    "DESCRIPTIONS": ["Whenever a card is #yExhausted, apply #b"," #yExposed to ALL enemies."]
   }
 }
