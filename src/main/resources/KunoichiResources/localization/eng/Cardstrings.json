@@ -217,7 +217,7 @@
   },
   "${ModID}:Stalk": {
     "NAME": "Stalk",
-    "DESCRIPTION": "Apply !M! Weak. NL Apply !Kunoichi:M2! kunoichi:Exposed."
+    "DESCRIPTION": "Apply !M! kunoichi:Exposed."
   },
   "${ModID}:Strike": {
     "NAME": "Strike",
