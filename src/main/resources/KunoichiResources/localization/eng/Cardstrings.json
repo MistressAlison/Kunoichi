@@ -145,6 +145,10 @@
     "NAME": "Hidden Supplies",
     "DESCRIPTION": "stslib:Grave. NL Gain {!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}. NL Draw !M! cards. NL Exhaust.{@@}"
   },
+  "${ModID}:HiddenIntel": {
+    "NAME": "Hidden Intel",
+    "DESCRIPTION": "stslib:Grave. NL At the start of your turn, kunoichi:Survey !M! card{!M!|>1=s}.{@@}"
+  },
   "${ModID}:Hightail": {
     "NAME": "Hightail",
     "DESCRIPTION": "Gain !M! kunoichi:Evasion. NL Exhaust."
