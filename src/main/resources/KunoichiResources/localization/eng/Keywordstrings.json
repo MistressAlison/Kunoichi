@@ -81,5 +81,13 @@
       "scavenged"
     ],
     "DESCRIPTION": "Cards which are not in your hand at the start of your turn are Scavenged."
+  },
+  {
+    "ID": "Uncover",
+    "PROPER_NAME": "Uncover",
+    "NAMES": [
+      "uncover"
+    ],
+    "DESCRIPTION": "Put a card from your discard pile into your hand."
   }
 ]

@@ -8,9 +8,12 @@ import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.BetterDiscardPileToHandAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardQueueItem;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.green.DaggerThrow;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.ThrowDaggerEffect;
 
@@ -33,11 +36,18 @@ public class FastHands extends AbstractEasyCard {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE, true));
         addToBot(new BetterDiscardPileToHandAction(magicNumber));
         addToBot(new OpenerAction(() -> {
-            addToTop(new BetterDiscardPileToHandAction(magicNumber));
-            addToTop(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE, true));
-            if (m != null) {
-                addToTop(new VFXAction(new ThrowDaggerEffect(m.hb.cX, m.hb.cY)));
+            AbstractCard tmp = makeSameInstanceOf();// 33
+            AbstractDungeon.player.limbo.addToBottom(tmp);// 34
+            tmp.current_x = current_x;// 35
+            tmp.current_y = current_y;// 36
+            tmp.target_x = (float) Settings.WIDTH / 2.0F - 300.0F * Settings.scale;// 37
+            tmp.target_y = (float)Settings.HEIGHT / 2.0F;// 38
+            if (m != null) {// 39
+                tmp.calculateCardDamage(m);// 40
             }
+
+            tmp.purgeOnUse = true;
+            AbstractDungeon.actionManager.addCardQueueItem(new CardQueueItem(tmp, m, energyOnUse, true, true), true);
         }));
     }
 

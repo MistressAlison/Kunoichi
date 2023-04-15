@@ -114,7 +114,7 @@
   },
   "${ModID}:FastHands": {
     "NAME": "Fast Hands",
-    "DESCRIPTION": "Deal !D! damage. NL Put !M! card{!M!|>1=s}{@@} from your discard pile into your hand. NL kunoichi:Opener: Repeat this effect."
+    "DESCRIPTION": "Deal !D! damage. NL kunoichi:Uncover !M! card{!M!|>1=s}{@@}. NL kunoichi:Opener: Play a copy of this card."
   },
   "${ModID}:FearIsTheWeakness": {
     "NAME": "Fear is the Weakness",
@@ -168,7 +168,7 @@
   },
   "${ModID}:MagnetPull": {
     "NAME": "Magnet Pull",
-    "DESCRIPTION": "Put !M! random cards from your discard pile into your hand."
+    "DESCRIPTION": "kunoichi:Uncover !M! random cards."
   },
   "${ModID}:Mislead": {
     "NAME": "Mislead",
