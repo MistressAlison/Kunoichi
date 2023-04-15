@@ -17,13 +17,13 @@ public class Indomitable extends AbstractEasyCard {
         super(ID, 2, CardType.SKILL, CardRarity.RARE, CardTarget.SELF);
         baseBlock = block = 18;
         baseMagicNumber = magicNumber = 2;
+        exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
         Wiz.applyToSelf(new ArtifactPower(p, magicNumber));
-        exhaust = true;
     }
 
     @Override
