@@ -232,7 +232,7 @@
   },
   "${ModID}:ShockingGrasp": {
     "NAME": "Shocking Grasp",
-    "DESCRIPTION": "Deal !D! damage. NL Ignores Block."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! kunoichi:Shock. NL Ignores Block."
   },
   "${ModID}:SmashAndGrab": {
     "NAME": "Smash and Grab",

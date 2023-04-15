@@ -2,7 +2,9 @@ package Kunoichi.cards;
 
 import Kunoichi.cards.abstracts.AbstractEasyCard;
 import Kunoichi.damageMods.PiercingDamage;
+import Kunoichi.powers.ShockPower;
 import Kunoichi.util.CardArtRoller;
+import Kunoichi.util.Wiz;
 import com.evacipated.cardcrawl.mod.stslib.damagemods.DamageModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -17,7 +19,8 @@ public class ShockingGrasp extends AbstractEasyCard {
 
     public ShockingGrasp() {
         super(ID, 0, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 6;
+        baseDamage = damage = 5;
+        baseMagicNumber = magicNumber = 1;
         DamageModifierManager.addModifier(this, new PiercingDamage());
     }
 
@@ -25,11 +28,13 @@ public class ShockingGrasp extends AbstractEasyCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("ORB_LIGHTNING_CHANNEL", 0.2f));
         dmg(m, AbstractGameAction.AttackEffect.BLUNT_LIGHT);
+        Wiz.applyToEnemy(m, new ShockPower(m, magicNumber));
     }
 
     @Override
     public void upp() {
-        upgradeDamage(6);
+        upgradeDamage(1);
+        upgradeMagicNumber(1);
     }
 
     @Override
