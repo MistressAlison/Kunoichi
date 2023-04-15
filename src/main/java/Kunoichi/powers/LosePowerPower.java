@@ -15,10 +15,10 @@ public class LosePowerPower extends AbstractEasyPower {
     public static String TEXT_ID = makeID(LosePowerPower.class.getSimpleName());
     public static PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(TEXT_ID);
     private AbstractPower powerToLose;
-    //private static Texture chain = TexLoader.getTexture("OrdnanceResources/images/ui/chain.png");
 
     public LosePowerPower(AbstractCreature owner, AbstractPower powerToLose, int amount) {
         super(strings.NAME + powerToLose.name, PowerType.DEBUFF, false, owner, amount);
+        this.ID = LosePowerPower.TEXT_ID+powerToLose.name;
         this.img = powerToLose.img;
         this.region48 = powerToLose.region48;
         this.region128 = powerToLose.region128;

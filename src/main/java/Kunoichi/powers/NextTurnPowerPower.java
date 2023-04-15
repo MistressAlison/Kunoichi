@@ -15,15 +15,10 @@ public class NextTurnPowerPower extends AbstractEasyPower {
     public static String TEXT_ID = makeID(NextTurnPowerPower.class.getSimpleName());
     public static PowerStrings strings = CardCrawlGame.languagePack.getPowerStrings(TEXT_ID);
     private AbstractPower powerToGain;
-        /*
-    private static Texture arrow48 = TexLoader.getTexture("OrdnanceResources/images/ui/arrow48.png");
-    private static Texture arrow128 = TexLoader.getTexture("OrdnanceResources/images/ui/arrow128.png");
-    public static HashMap<String, TextureAtlas.AtlasRegion> bufferHashMap48 = new HashMap<>();
-    public static HashMap<String, TextureAtlas.AtlasRegion> bufferHashMap128 = new HashMap<>();
-    */
 
     public NextTurnPowerPower(AbstractCreature owner, AbstractPower powerToGrant) {
         super(strings.NAME + powerToGrant.name, powerToGrant.type, false, owner, powerToGrant.amount);
+        this.ID = TEXT_ID+powerToGrant.name;
         this.img = powerToGrant.img;
         this.region48 = powerToGrant.region48;
         this.region128 = powerToGrant.region128;
