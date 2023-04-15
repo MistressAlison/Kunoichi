@@ -5,7 +5,7 @@
   },
   "${ModID}:ExposedPower": {
     "NAME": "Exposed",
-    "DESCRIPTIONS": ["Takes #b"," more damage from Attacks this turn."]
+    "DESCRIPTIONS": ["Takes #b"," more damage from Attacks and #yCounters this turn."]
   },
   "${ModID}:BloodlustPower": {
     "NAME": "Bloodlust",

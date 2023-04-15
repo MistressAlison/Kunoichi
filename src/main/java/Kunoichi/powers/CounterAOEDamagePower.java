@@ -9,7 +9,10 @@ import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.combat.CleaveEffect;
 
 import static Kunoichi.KunoichiMod.makeID;
@@ -32,7 +35,17 @@ public class CounterAOEDamagePower extends AbstractEasyPower {
             this.flash();
             AntinomyPower.staticTrigger();
             addToTop(new RemoveSpecificPowerAction(owner, owner, this));
-            addToTop(new DamageAllEnemiesAction(owner, DamageInfo.createDamageMatrix(amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
+            int[] damages = DamageInfo.createDamageMatrix(amount, true);
+            for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
+                if (!m.isDeadOrEscaped()) {
+                    AbstractPower p = m.getPower(ExposedPower.POWER_ID);
+                    if (p != null) {
+                        p.flashWithoutSound();
+                        damages[AbstractDungeon.getMonsters().monsters.indexOf(m)] += p.amount;
+                    }
+                }
+            }
+            addToTop(new DamageAllEnemiesAction(owner, damages, DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
             addToTop(new VFXAction(owner, new CleaveEffect(), 0.1F));
             addToTop(new SFXAction("ATTACK_HEAVY"));
             addToTop(new AnimationAction(AnimationAction.Animation.ATTACK));

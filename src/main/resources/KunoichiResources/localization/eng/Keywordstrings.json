@@ -6,7 +6,7 @@
       "expose",
       "exposed"
     ],
-    "DESCRIPTION": "Exposed creatures take more damage from Attacks this turn."
+    "DESCRIPTION": "Exposed creatures take more damage from Attacks and #yCounters this turn."
   },
   {
     "ID": "opener",
