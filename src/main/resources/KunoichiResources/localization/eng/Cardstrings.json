@@ -151,7 +151,7 @@
   },
   "${ModID}:Hightail": {
     "NAME": "Hightail",
-    "DESCRIPTION": "Gain !M! kunoichi:Evasion. NL Exhaust."
+    "DESCRIPTION": "Gain !M! kunoichi:Evasion. NL Exhaust. NL kunoichi:Opener: Don't Exhaust."
   },
   "${ModID}:Indomitable": {
     "NAME": "Indomitable",

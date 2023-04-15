@@ -23,7 +23,7 @@ public class OpenerAction extends AbstractGameAction {
         this.isDone = true;
     }
 
-    private static boolean openerPlayCheck() {
+    public static boolean openerPlayCheck() {
         int played = AbstractDungeon.actionManager.cardsPlayedThisTurn.size();
         int threshold = 1;
         if (threshold >= played) {
