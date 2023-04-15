@@ -244,8 +244,8 @@
   },
   "${ModID}:Snipe": {
     "NAME": "Snipe",
-    "DESCRIPTION": "Discard a card to deal !D! damage and apply kunoichi:Exposed equal to its cost + !M!.",
-    "EXTENDED_DESCRIPTION": ["I need another card to fire.","To Fire"]
+    "DESCRIPTION": "Exhaust a card. NL Deal damage equal to !D! plus !M! times its cost.",
+    "EXTENDED_DESCRIPTION": ["I need another card to Exhaust.","To Exhaust"]
   },
   "${ModID}:Stalk": {
     "NAME": "Stalk",
