@@ -6,12 +6,12 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.EnableEndTurnButtonAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import javassist.CtBehavior;
 
 import java.util.ArrayList;
@@ -23,6 +23,7 @@ public class CardCounterPatches {
     public static final ArrayList<AbstractCard> cardsDrawnThisTurn = new ArrayList<>();
     public static final ArrayList<AbstractCard> cardsDrawnThisCombat = new ArrayList<>();
     public static final ArrayList<AbstractCard> initialHand = new ArrayList<>();
+    public static boolean isInitialDraw;
 
     @SpirePatch2(clz = GameActionManager.class, method = "clear")
     public static class ResetCounters {
@@ -34,6 +35,7 @@ public class CardCounterPatches {
             cardsDrawnThisCombat.clear();
             cardsDrawnThisTurn.clear();
             initialHand.clear();
+            isInitialDraw = true;
         }
     }
 
@@ -44,6 +46,7 @@ public class CardCounterPatches {
             cardsSurveyedThisTurn = 0;
             cardsDrawnThisTurn.clear();
             initialHand.clear();
+            isInitialDraw = true;
         }
 
         public static class Locator extends SpireInsertLocator {
@@ -64,30 +67,15 @@ public class CardCounterPatches {
         }
     }
 
-    @SpirePatch2(clz = AbstractPlayer.class, method = "draw", paramtypez = {int.class})
-    public static class CardsDrawn {
-        @SpireInsertPatch(locator = Locator.class, localvars = {"c"})
-        public static void plz(AbstractCard c) {
-            cardsDrawnThisCombat.add(c);
-            cardsDrawnThisTurn.add(c);
-        }
-
-        public static class Locator extends SpireInsertLocator {
-            @Override
-            public int[] Locate(CtBehavior ctBehavior) throws Exception {
-                return LineFinder.findInOrder(ctBehavior, new Matcher.MethodCallMatcher(CardGroup.class, "addToHand"));
-            }
-        }
-    }
 
     @SpirePatch2(clz = GameActionManager.class, method = "getNextAction")
     public static class GetInitialDraw {
         @SpireInsertPatch(locator = Locator.class)
-        public static void plz(GameActionManager __instance) {
-            __instance.addToBottom(new AbstractGameAction() {
+        public static void plz() {
+            AbstractDungeon.actionManager.addToBottom(new AbstractGameAction() {
                 @Override
                 public void update() {
-                    initialHand.addAll(AbstractDungeon.player.hand.group);
+                    isInitialDraw = false;
                     this.isDone = true;
                 }
             });
@@ -96,6 +84,26 @@ public class CardCounterPatches {
             @Override
             public int[] Locate(CtBehavior ctBehavior) throws Exception {
                 return LineFinder.findInOrder(ctBehavior, new Matcher.NewExprMatcher(EnableEndTurnButtonAction.class));
+            }
+        }
+    }
+
+    @SpirePatch2(clz = AbstractRoom.class, method = "update")
+    public static class GetInitialDraw2 {
+        @SpireInsertPatch(locator = Locator.class)
+        public static void plz() {
+            AbstractDungeon.actionManager.addToBottom(new AbstractGameAction() {
+                @Override
+                public void update() {
+                    isInitialDraw = false;
+                    this.isDone = true;
+                }
+            });
+        }
+        public static class Locator extends SpireInsertLocator {
+            @Override
+            public int[] Locate(CtBehavior ctBehavior) throws Exception {
+                return LineFinder.findInOrder(ctBehavior, new Matcher.MethodCallMatcher(GameActionManager.class, "useNextCombatActions"));
             }
         }
     }
