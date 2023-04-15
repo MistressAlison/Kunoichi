@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import javassist.CtBehavior;
 
 public class WasPowerActuallyAppliedPatches {
@@ -31,8 +32,13 @@ public class WasPowerActuallyAppliedPatches {
     @SpirePatch2(clz = ApplyPowerAction.class, method = "update")
     public static class UpdateActuallyApplied {
         @SpireInsertPatch(locator = Locator.class)
-        public static void setApplied(ApplyPowerAction __instance) {
+        public static void setApplied(ApplyPowerAction __instance, AbstractPower ___powerToApply) {
             AppliedField.actuallyApplied.set(__instance, true);
+            for (AbstractRelic r : AbstractDungeon.player.relics) {
+                if (r instanceof OnActuallyApplyPowerRelic) {
+                    ((OnActuallyApplyPowerRelic) r).onApplyPower(__instance.target, __instance.source, ___powerToApply);
+                }
+            }
         }
     }
 
@@ -44,4 +50,7 @@ public class WasPowerActuallyAppliedPatches {
         }
     }
 
+    public interface OnActuallyApplyPowerRelic {
+        void onApplyPower(AbstractCreature target, AbstractCreature source, AbstractPower power);
+    }
 }

@@ -10,7 +10,7 @@
     "NAME": "Stomping Boots",
     "FLAVOR": "First I put on my left stomping boot. It's quite stompy, and a particular favorite of mine.",
     "DESCRIPTIONS": [
-      "Whenever you deal unblocked attack damage, the target loses #b2 HP."
+      "Whenever you apply a debuff to an enemy, they lose #b2 HP."
     ]
   }
 }
