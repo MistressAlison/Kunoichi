@@ -73,5 +73,13 @@
       "clutch"
     ],
     "DESCRIPTION": "#yRight #yClick to #yExhaust this card and trigger an effect."
+  },
+  {
+    "ID": "scavenged",
+    "PROPER_NAME": "Scavenged",
+    "NAMES": [
+      "scavenged"
+    ],
+    "DESCRIPTION": "Cards which are not in your hand at the start of your turn are Scavenged."
   }
 ]

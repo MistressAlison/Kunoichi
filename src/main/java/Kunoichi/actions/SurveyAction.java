@@ -1,5 +1,6 @@
 package Kunoichi.actions;
 
+import Kunoichi.patches.CardCounterPatches;
 import Kunoichi.util.Wiz;
 import basemod.BaseMod;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -78,6 +79,8 @@ public class SurveyAction extends AbstractGameAction {
                     AbstractDungeon.player.hand.addToTop(c);// 62
                     AbstractDungeon.player.hand.refreshHandLayout();// 63
                     AbstractDungeon.player.hand.applyPowers();// 64
+                    CardCounterPatches.cardsSurveyedThisCombat++;
+                    CardCounterPatches.cardsSurveyedThisTurn++;
                 }
             }
         }));

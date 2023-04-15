@@ -14,6 +14,7 @@ public class KeywordManager {
     public static String SHOCK;
     public static String AGILE;
     public static String CLUTCH;
+    public static String SCAVENGED;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");

@@ -1,6 +1,7 @@
 package Kunoichi.util;
 
 import Kunoichi.actions.TimedVFXAction;
+import Kunoichi.patches.CardCounterPatches;
 import Kunoichi.powers.LosePowerPower;
 import Kunoichi.powers.NextTurnPowerPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -216,5 +217,9 @@ public class Wiz {
             }
         }
         return false;
+    }
+
+    public static boolean isScavenged(AbstractCard c) {
+        return CardCounterPatches.cardsDrawnThisTurn.lastIndexOf(c) >= CardCounterPatches.initialHand.size();
     }
 }
