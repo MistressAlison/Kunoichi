@@ -4,7 +4,7 @@ import Kunoichi.cards.abstracts.AbstractEasyCard;
 import Kunoichi.powers.CounterDamagePower;
 import Kunoichi.util.CardArtRoller;
 import Kunoichi.util.Wiz;
-import com.megacrit.cardcrawl.cards.green.Setup;
+import com.megacrit.cardcrawl.cards.purple.Vigilance;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -38,6 +38,6 @@ public class Prepare extends AbstractEasyCard {
 
     @Override
     public String cardArtCopy() {
-        return Setup.ID;
+        return Vigilance.ID;
     }
 }
