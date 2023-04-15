@@ -74,6 +74,10 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "${ModID}:DistantStrike": {
+    "NAME": "Distant Strike",
+    "DESCRIPTION": "Deal !D! damage. NL If this did not start the turn in your hand, it costs 0."
+  },
   "${ModID}:DiveForCover": {
     "NAME": "Dive for Cover",
     "DESCRIPTION": "Gain !B! Block. NL Remove !M! of your debuffs."
