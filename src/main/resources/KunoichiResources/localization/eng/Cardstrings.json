@@ -112,6 +112,10 @@
     "DESCRIPTION": "Draw X cards. NL They cost 0 this turn. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Draw X+1 cards. NL They cost 0 this turn. NL Exhaust."
   },
+  "${ModID}:FastHands": {
+    "NAME": "Fast Hands",
+    "DESCRIPTION": "Deal !D! damage. NL Put !M! card{!M!|>1=s}{@@} from your discard pile into your hand. NL kunoichi:Opener: Repeat this effect."
+  },
   "${ModID}:FearIsTheWeakness": {
     "NAME": "Fear is the Weakness",
     "DESCRIPTION": "At the start of your turn, gain !M! Strength for each enemy that intends to attack."
