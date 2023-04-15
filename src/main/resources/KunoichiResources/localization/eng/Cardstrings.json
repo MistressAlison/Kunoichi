@@ -287,6 +287,10 @@
     "NAME": "Unseen Strike",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy does not intend to attack, deal !D! damage again."
   },
+  "${ModID}:WaterWalking": {
+    "NAME": "Water Walking",
+    "DESCRIPTION": "Gain !M! kunoichi:Evasion. NL Next turn, gain !M! kunoichi:Evasion."
+  },
   "${ModID}:WeaknessExploit": {
     "NAME": "Weakness Exploit",
     "DESCRIPTION": "Attacks deal {!M!|0=0%|1=25%|2=50%|3=75%|4=100%|5=125%|6=150%|7=175%|8=200%|9=225%|10=250%|11=275%|12=300%|>12=substantially} more damage to enemies with Vulnerable.{@@}"
