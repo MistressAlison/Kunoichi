@@ -52,6 +52,10 @@
     "NAME": "Camouflage",
     "DESCRIPTION": "Gain !B! Block. NL Gain !M! kunoichi:Evasion. NL Exhaust."
   },
+  "${ModID}:ChainLightning": {
+    "NAME": "Chain Lightning",
+    "DESCRIPTION": "Deal !D! damage for each enemy in combat to ALL enemies."
+  },
   "${ModID}:CheckForTraps": {
     "NAME": "Check for Traps",
     "DESCRIPTION": "Gain !B! Block. NL kunoichi:Survey !M! cards."
