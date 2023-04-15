@@ -302,5 +302,9 @@
   "${ModID}:WindAndSpark": {
     "NAME": "Wind and Spark",
     "DESCRIPTION": "Whenever you draw an Unplayable card, apply !M! kunoichi:Shock to ALL enemies."
+  },
+  "${ModID}:WeaponsReady": {
+    "NAME": "Weapons Ready",
+    "DESCRIPTION": "At the end of your turn, gain kunoichi:Counter: Deal !M! damage back."
   }
 }

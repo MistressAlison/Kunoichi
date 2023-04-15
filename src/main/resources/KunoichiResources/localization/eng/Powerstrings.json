@@ -87,5 +87,9 @@
   "${ModID}:HiddenIntelPower": {
     "NAME": "Hidden Intel",
     "DESCRIPTIONS": ["At the start of your turn, #ySurvey #b"," card."," cards."]
+  },
+  "${ModID}:WeaponsReadyPower": {
+    "NAME": "Weapons Ready",
+    "DESCRIPTIONS": ["At the end of your turn, gain #yCounter: Deal #b"," damage back."]
   }
 }
