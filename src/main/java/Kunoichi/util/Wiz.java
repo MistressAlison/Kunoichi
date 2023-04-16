@@ -198,7 +198,7 @@ public class Wiz {
     }
 
     public static boolean isAttacking(AbstractMonster m) {
-        return m != null && m.getIntentBaseDmg() >= 0;
+        return m != null && !m.isDeadOrEscaped() && m.getIntentBaseDmg() >= 0;
     }
 
     public static boolean anyMonsterAttacking() {
