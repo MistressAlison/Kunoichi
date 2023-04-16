@@ -16,8 +16,8 @@ public class Tromp extends AbstractEasyCard {
 
     public Tromp() {
         super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 6;
-        baseMagicNumber = magicNumber = 3;
+        baseDamage = damage = 9;
+        baseMagicNumber = magicNumber = 2;
     }
 
     @Override
@@ -29,7 +29,7 @@ public class Tromp extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeDamage(2);
+        upgradeDamage(3);
         //upgradeMagicNumber(1);
     }
 
