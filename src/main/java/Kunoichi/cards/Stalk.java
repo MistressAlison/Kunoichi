@@ -16,7 +16,6 @@ public class Stalk extends AbstractEasyCard {
     public Stalk() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.ENEMY);
         baseMagicNumber = magicNumber = 4;
-        exhaust = true;
     }
 
     @Override
