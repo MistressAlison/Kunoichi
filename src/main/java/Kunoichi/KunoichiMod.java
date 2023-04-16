@@ -47,8 +47,8 @@ public class KunoichiMod implements
 
     public static final Color DARK_GUNMETAL = CardHelper.getColor(18, 22, 47);
 
-    public static final String SHOULDER1 = modID + "Resources/images/char/mainChar/shoulder.png";
-    public static final String SHOULDER2 = modID + "Resources/images/char/mainChar/shoulder2.png";
+    public static final String SHOULDER1 = modID + "Resources/images/char/mainChar/shoulder2.png";
+    public static final String SHOULDER2 = modID + "Resources/images/char/mainChar/shoulder1.png";
     public static final String CORPSE = modID + "Resources/images/char/mainChar/corpse.png";
     private static final String ATTACK_S_ART = modID + "Resources/images/512/bg_attack.png";
     private static final String SKILL_S_ART = modID + "Resources/images/512/bg_skill.png";
