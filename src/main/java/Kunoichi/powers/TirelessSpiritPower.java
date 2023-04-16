@@ -31,6 +31,11 @@ public class TirelessSpiritPower extends AbstractEasyPower {
     }
 
     @Override
+    public void atStartOfTurn() {
+        triggers = 0;
+    }
+
+    @Override
     public void onSpecificTrigger() {
         triggers++;
     }
