@@ -51,9 +51,9 @@ public class DestroyMorale extends AbstractEasyCard implements EnterCardGroupPat
     @Override
     public void onEnter(CardGroup g) {
         if (g == Wiz.adp().hand) {
-            superFlash(Settings.RED_TEXT_COLOR);
+            superFlash(Settings.RED_TEXT_COLOR.cpy());
             Wiz.forAllMonstersLiving(mon -> Wiz.applyToEnemyTop(mon, new WeakPower(mon, magicNumber, false)));
-            addToTop(new VFXAction(Wiz.adp(), new ShockWaveEffect(Wiz.adp().hb.cX, Wiz.adp().hb.cY, Settings.RED_TEXT_COLOR, ShockWaveEffect.ShockWaveType.CHAOTIC), 0.3F));
+            addToTop(new VFXAction(Wiz.adp(), new ShockWaveEffect(Wiz.adp().hb.cX, Wiz.adp().hb.cY, Settings.RED_TEXT_COLOR.cpy(), ShockWaveEffect.ShockWaveType.CHAOTIC), 0.3F));
             addToTop(new SFXAction("ATTACK_PIERCING_WAIL"));
         }
     }
