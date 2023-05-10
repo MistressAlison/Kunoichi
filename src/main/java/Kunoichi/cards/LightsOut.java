@@ -1,7 +1,6 @@
 package Kunoichi.cards;
 
 import Kunoichi.actions.DamageFollowupAction;
-import Kunoichi.actions.OpenerAction;
 import Kunoichi.cards.abstracts.AbstractEasyCard;
 import Kunoichi.util.CardArtRoller;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -34,11 +33,15 @@ public class LightsOut extends AbstractEasyCard {
         }
         addToBot(new DamageFollowupAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE, t -> {
            if (t.isDying || t.currentHealth <= 0) {
-               addToTop(new DrawCardAction(magicNumber, new OpenerAction(() -> {
-                   for (AbstractCard c : DrawCardAction.drawnCards) {
-                       c.setCostForTurn(0);
+               addToTop(new DrawCardAction(magicNumber, new AbstractGameAction() {
+                   @Override
+                   public void update() {
+                       for (AbstractCard c : DrawCardAction.drawnCards) {
+                           c.setCostForTurn(0);
+                       }
+                       this.isDone = true;
                    }
-               })));
+               }));
            }
         }));
     }
